@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "delikt": "Messerstecherei",
+    "beschreibung": "Ein 34-jähriger Mann wurde am Bahnhof in Kiel mit einem Messer schwer verletzt.",
+    "ort": "Kiel Hauptbahnhof",
+    "datum": "2025-03-25",
+    "quelle": "https://www.presseportal.de/blaulicht/pm/14626/1234567",
+    "koordinaten": [
+      54.3142,
+      10.1228
+    ],
+    "farbe": "orange"
+  }
+]
