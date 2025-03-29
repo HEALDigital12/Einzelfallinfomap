@@ -5,4 +5,4 @@ function App() {
   return <CrimeMap />;
 }
 
-export default App;
+export default App
