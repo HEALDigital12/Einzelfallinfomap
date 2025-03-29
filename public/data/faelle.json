@@ -1,0 +1,49 @@
+{
+  "last_updated": "2025-03-29T19:52:10Z",
+  "faelle": [
+    {
+      "delikt": "Messerstecherei",
+      "ort": "Hamburg Hauptbahnhof",
+      "datum": "2025-03-25",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/6337/1234567",
+      "koordinaten": [
+        53.5526,
+        10.0066
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Tötungsdelikt",
+      "ort": "Berlin Neukölln",
+      "datum": "2025-03-22",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/1234/1234568",
+      "koordinaten": [
+        52.4795,
+        13.4386
+      ],
+      "farbe": "red"
+    },
+    {
+      "delikt": "Raubüberfall",
+      "ort": "Köln Innenstadt",
+      "datum": "2025-03-20",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/5678/1234569",
+      "koordinaten": [
+        50.9375,
+        6.9603
+      ],
+      "farbe": "yellow"
+    },
+    {
+      "delikt": "Vergewaltigung",
+      "ort": "Leipzig Südvorstadt",
+      "datum": "2025-03-18",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/91011/1234570",
+      "koordinaten": [
+        51.321,
+        12.3713
+      ],
+      "farbe": "violet"
+    }
+  ]
+}
