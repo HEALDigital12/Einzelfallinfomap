@@ -13,10 +13,10 @@ function CrimeMap({ selectedTypes }) {
     });
     tileLayer.addTo(map);
 
-    fetch("/data/faelle.json")
+    fetch('/data/faelle.json')
       .then(res => res.json())
       .then(data => {
-        data.forEach(fall => {
+        data.faelle.forEach(fall => {
           if (selectedTypes.includes(fall.delikt)) {
             const marker = L.circleMarker(fall.koordinaten, {
               radius: 8,
