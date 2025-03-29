@@ -1,11 +1,11 @@
 {
-  "last_updated": "2025-03-29T19:52:10Z",
+  "last_updated": "2025-03-29T20:10:49Z",
   "faelle": [
     {
       "delikt": "Messerstecherei",
       "ort": "Hamburg Hauptbahnhof",
       "datum": "2025-03-25",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/6337/1234567",
+      "quelle": "https://presseportal.de/pm/1",
       "koordinaten": [
         53.5526,
         10.0066
@@ -16,7 +16,7 @@
       "delikt": "Tötungsdelikt",
       "ort": "Berlin Neukölln",
       "datum": "2025-03-22",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/1234/1234568",
+      "quelle": "https://presseportal.de/pm/2",
       "koordinaten": [
         52.4795,
         13.4386
@@ -27,7 +27,7 @@
       "delikt": "Raubüberfall",
       "ort": "Köln Innenstadt",
       "datum": "2025-03-20",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/5678/1234569",
+      "quelle": "https://presseportal.de/pm/3",
       "koordinaten": [
         50.9375,
         6.9603
@@ -38,10 +38,186 @@
       "delikt": "Vergewaltigung",
       "ort": "Leipzig Südvorstadt",
       "datum": "2025-03-18",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/91011/1234570",
+      "quelle": "https://presseportal.de/pm/4",
       "koordinaten": [
         51.321,
         12.3713
+      ],
+      "farbe": "violet"
+    },
+    {
+      "delikt": "Tötungsdelikt",
+      "ort": "Stuttgart West",
+      "datum": "2025-03-17",
+      "quelle": "https://presseportal.de/pm/5",
+      "koordinaten": [
+        48.7758,
+        9.1829
+      ],
+      "farbe": "red"
+    },
+    {
+      "delikt": "Messerstecherei",
+      "ort": "Frankfurt Zeil",
+      "datum": "2025-03-16",
+      "quelle": "https://presseportal.de/pm/6",
+      "koordinaten": [
+        50.1155,
+        8.6842
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Raubüberfall",
+      "ort": "Dortmund Nordstadt",
+      "datum": "2025-03-15",
+      "quelle": "https://presseportal.de/pm/7",
+      "koordinaten": [
+        51.5142,
+        7.4685
+      ],
+      "farbe": "yellow"
+    },
+    {
+      "delikt": "Vergewaltigung",
+      "ort": "Dresden Neustadt",
+      "datum": "2025-03-14",
+      "quelle": "https://presseportal.de/pm/8",
+      "koordinaten": [
+        51.0645,
+        13.7434
+      ],
+      "farbe": "violet"
+    },
+    {
+      "delikt": "Tötungsdelikt",
+      "ort": "München Sendling",
+      "datum": "2025-03-13",
+      "quelle": "https://presseportal.de/pm/9",
+      "koordinaten": [
+        48.1196,
+        11.5413
+      ],
+      "farbe": "red"
+    },
+    {
+      "delikt": "Messerstecherei",
+      "ort": "Hannover Hauptbahnhof",
+      "datum": "2025-03-12",
+      "quelle": "https://presseportal.de/pm/10",
+      "koordinaten": [
+        52.3791,
+        9.7416
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Raubüberfall",
+      "ort": "Bremen Mitte",
+      "datum": "2025-03-11",
+      "quelle": "https://presseportal.de/pm/11",
+      "koordinaten": [
+        53.0793,
+        8.8017
+      ],
+      "farbe": "yellow"
+    },
+    {
+      "delikt": "Vergewaltigung",
+      "ort": "Nürnberg Gostenhof",
+      "datum": "2025-03-10",
+      "quelle": "https://presseportal.de/pm/12",
+      "koordinaten": [
+        49.4483,
+        11.0651
+      ],
+      "farbe": "violet"
+    },
+    {
+      "delikt": "Tötungsdelikt",
+      "ort": "Essen Altendorf",
+      "datum": "2025-03-09",
+      "quelle": "https://presseportal.de/pm/13",
+      "koordinaten": [
+        51.4613,
+        7.0017
+      ],
+      "farbe": "red"
+    },
+    {
+      "delikt": "Messerstecherei",
+      "ort": "Düsseldorf Hauptbahnhof",
+      "datum": "2025-03-08",
+      "quelle": "https://presseportal.de/pm/14",
+      "koordinaten": [
+        51.2208,
+        6.787
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Raubüberfall",
+      "ort": "Bonn Zentrum",
+      "datum": "2025-03-07",
+      "quelle": "https://presseportal.de/pm/15",
+      "koordinaten": [
+        50.7374,
+        7.0982
+      ],
+      "farbe": "yellow"
+    },
+    {
+      "delikt": "Vergewaltigung",
+      "ort": "Freiburg Stühlinger",
+      "datum": "2025-03-06",
+      "quelle": "https://presseportal.de/pm/16",
+      "koordinaten": [
+        47.9959,
+        7.8375
+      ],
+      "farbe": "violet"
+    },
+    {
+      "delikt": "Tötungsdelikt",
+      "ort": "Augsburg Innenstadt",
+      "datum": "2025-03-05",
+      "quelle": "https://presseportal.de/pm/17",
+      "koordinaten": [
+        48.3657,
+        10.8944
+      ],
+      "farbe": "red"
+    },
+    {
+      "delikt": "Messerstecherei",
+      "ort": "Regensburg Hauptbahnhof",
+      "datum": "2025-03-04",
+      "quelle": "https://presseportal.de/pm/18",
+      "koordinaten": [
+        49.0134,
+        12.1016
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Raubüberfall",
+      "ort": "Mannheim Jungbusch",
+      "datum": "2025-03-03",
+      "quelle": "https://presseportal.de/pm/19",
+      "koordinaten": [
+        49.4883,
+        8.466
+      ],
+      "farbe": "yellow"
+    },
+    {
+      "delikt": "Vergewaltigung",
+      "ort": "Kiel Gaarden",
+      "datum": "2025-03-02",
+      "quelle": "https://presseportal.de/pm/20",
+      "koordinaten": [
+        54.3132,
+        10.1435
       ],
       "farbe": "violet"
     }
