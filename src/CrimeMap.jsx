@@ -1,36 +1,3 @@
-﻿import React, { useEffect } from 'react';
-import L from 'leaflet';
-
-function CrimeMap() {
-  useEffect(() => {
-    const map = L.map('map').setView([51.1657, 10.4515], 6); // Mittelpunkt Deutschland
-
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap-Mitwirkende & CartoDB',
-      subdomains: 'abcd',
-      maxZoom: 19
-    }).addTo(map);
-
-    fetch('/data/crime_data_schleswig_holstein.json')
-      .then(res => res.json())
-      .then(data => {
-        data.forEach(fall => {
-          const marker = L.circleMarker(fall.koordinaten, {
-            radius: 8,
-            color: fall.farbe,
-            fillColor: fall.farbe,
-            fillOpacity: 0.9
-          }).addTo(map);
-          marker.bindPopup(
-            `<strong>${fall.delikt}</strong><br>${fall.ort}<br>${fall.datum}<br><a href="${fall.quelle}" target="_blank">Zur Quelle</a>`
-          );
-        });
-      });
-  }, []);
-
-  return (
-    <div id="map" style={{ height: '100vh', width: '100%' }}></div>
-  );
-}
-
-export default CrimeMap;
+﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>ServerBusy</Code><Message>Operations per second is over the account limit.
+RequestId:0a0695de-401e-006d-38ba-a0acf3000000
+Time:2025-03-29T14:56:11.9588741Z</Message></Error>
