@@ -1,7 +1,8 @@
 import React from 'react';
+import CrimeMap from './CrimeMap';
 
 function App() {
-  return <h1>EinzelfallInfoMap kommt bald!</h1>;
+  return <CrimeMap />;
 }
 
 export default App;
