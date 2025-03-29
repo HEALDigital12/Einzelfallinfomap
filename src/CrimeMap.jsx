@@ -13,7 +13,7 @@ function CrimeMap({ selectedTypes }) {
     });
     tileLayer.addTo(map);
 
-    fetch('/data/crime_data_schleswig_holstein.json')
+    fetch("/data/faelle.json")
       .then(res => res.json())
       .then(data => {
         data.forEach(fall => {
