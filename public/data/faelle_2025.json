@@ -1,0 +1,115 @@
+{
+  "last_updated": "2025-03-30T09:47:51Z",
+  "faelle": [
+    {
+      "delikt": "Messerstecherei",
+      "ort": "Hamburg Hauptbahnhof",
+      "datum": "2025-01-03",
+      "quelle": "https://presseportal.de/pm/1",
+      "koordinaten": [
+        53.5526,
+        10.0066
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Tötungsdelikt",
+      "ort": "Berlin Neukölln",
+      "datum": "2025-01-05",
+      "quelle": "https://presseportal.de/pm/2",
+      "koordinaten": [
+        52.4795,
+        13.4386
+      ],
+      "farbe": "red"
+    },
+    {
+      "delikt": "Raubüberfall",
+      "ort": "Köln Innenstadt",
+      "datum": "2025-01-08",
+      "quelle": "https://presseportal.de/pm/3",
+      "koordinaten": [
+        50.9375,
+        6.9603
+      ],
+      "farbe": "yellow"
+    },
+    {
+      "delikt": "Vergewaltigung",
+      "ort": "Leipzig Südvorstadt",
+      "datum": "2025-01-10",
+      "quelle": "https://presseportal.de/pm/4",
+      "koordinaten": [
+        51.321,
+        12.3713
+      ],
+      "farbe": "violet"
+    },
+    {
+      "delikt": "Raubüberfall",
+      "ort": "Bremen Mitte",
+      "datum": "2025-01-14",
+      "quelle": "https://presseportal.de/pm/5",
+      "koordinaten": [
+        53.0793,
+        8.8017
+      ],
+      "farbe": "yellow"
+    },
+    {
+      "delikt": "Vergewaltigung",
+      "ort": "Nürnberg Gostenhof",
+      "datum": "2025-01-18",
+      "quelle": "https://presseportal.de/pm/6",
+      "koordinaten": [
+        49.4483,
+        11.0651
+      ],
+      "farbe": "violet"
+    },
+    {
+      "delikt": "Tötungsdelikt",
+      "ort": "Essen Altendorf",
+      "datum": "2025-01-20",
+      "quelle": "https://presseportal.de/pm/7",
+      "koordinaten": [
+        51.4613,
+        7.0017
+      ],
+      "farbe": "red"
+    },
+    {
+      "delikt": "Messerstecherei",
+      "ort": "Düsseldorf Hbf",
+      "datum": "2025-01-25",
+      "quelle": "https://presseportal.de/pm/8",
+      "koordinaten": [
+        51.2208,
+        6.787
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Raubüberfall",
+      "ort": "Mannheim Jungbusch",
+      "datum": "2025-01-29",
+      "quelle": "https://presseportal.de/pm/9",
+      "koordinaten": [
+        49.4883,
+        8.466
+      ],
+      "farbe": "yellow"
+    },
+    {
+      "delikt": "Vergewaltigung",
+      "ort": "Kiel Gaarden",
+      "datum": "2025-01-31",
+      "quelle": "https://presseportal.de/pm/10",
+      "koordinaten": [
+        54.3132,
+        10.1435
+      ],
+      "farbe": "violet"
+    }
+  ]
+}
