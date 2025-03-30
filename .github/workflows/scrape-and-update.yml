@@ -23,7 +23,7 @@ jobs:
       - name: Run Scraper
         run: python scrape_faelle_2025.py
 
-      - name: Debug: Test GH_PAT Sichtbarkeit
+      - name: Debug - Test GH_PAT Sichtbarkeit
         run: |
           echo "Token startet mit:"
           echo "${{ secrets.GH_PAT }}" | cut -c1-10
