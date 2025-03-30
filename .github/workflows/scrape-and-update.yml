@@ -32,6 +32,6 @@ jobs:
           git add public/data/faelle_2025.json
           git diff --cached --quiet || (
             git commit -m "Automatisches Update: $(date)"
-            git remote set-url origin https://HEALDigital12:${GH_PAT}@github.com/HEALDigital12/Einzelfallinfomap.git
+            git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git
             git push origin HEAD:main
           )
