@@ -2,8 +2,8 @@ name: Scrape and Update Faelle
 
 on:
   schedule:
-    - cron: '0 20 * * *'  # Läuft jeden Tag um 20:00 UTC
-  workflow_dispatch:      # Manuell auslösbar
+    - cron: '0 20 * * *'
+  workflow_dispatch:
 
 jobs:
   run-scraper:
@@ -32,6 +32,6 @@ jobs:
           git add public/data/faelle_2025.json
           git diff --cached --quiet || (
             git commit -m "Automatisches Update: $(date)"
-            git remote set-url origin https://x-access-token:${GH_PAT}@github.com/HEALDigital12/Einzelfallinfomap.git
+            git remote set-url origin https://${GH_PAT}@github.com/HEALDigital12/Einzelfallinfomap.git
             git push origin HEAD:main
           )
