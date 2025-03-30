@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 # scrape_faelle_2025.py
-# Holt Presseartikel, filtert Delikte, gibt faelle_2025.json aus (Beispiel)
-
 import json
 from datetime import datetime
 
