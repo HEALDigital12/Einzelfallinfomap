@@ -23,6 +23,9 @@ jobs:
       - name: Run Scraper
         run: python scrape_faelle_2025.py
 
+      - name: Debug: Test GH_PAT Sichtbarkeit
+        run: echo "Token startet mit: ${{ secrets.GH_PAT }}" | cut -c1-10
+
       - name: Commit and push if changed using GH_PAT
         run: |
           git config user.name github-actions
