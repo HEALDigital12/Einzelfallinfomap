@@ -2,7 +2,7 @@ name: Scrape and Update Faelle
 
 on:
   schedule:
-    - cron: '0 20 * * *'  # täglich 20:00 Uhr
+    - cron: '0 20 * * *'
   workflow_dispatch:
 
 jobs:
@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -18,15 +20,20 @@ jobs:
           python-version: '3.x'
 
       - name: Install Dependencies
-        run: pip install requests
+        run: pip install requests beautifulsoup4
 
       - name: Run Scraper
         run: python scrape_faelle_2025.py
 
-      - name: Commit updated data
+      - name: Commit and push if changed using GH_PAT
+        env:
+          GH_PAT: \${{ secrets.GH_PAT }}
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
+          git config user.name "HEALDigital12"
+          git config user.email "HEALDigital12@users.noreply.github.com"
           git add public/data/faelle_2025.json
-          git commit -m "Automatisches Update: $(date)"
-          git push
+          git diff --cached --quiet || (
+            git commit -m "Automatisches Update: \$(date)"
+            git remote set-url origin https://\${GH_PAT}@github.com/HEALDigital12/Einzelfallinfomap.git
+            git push origin HEAD:main
+          )
