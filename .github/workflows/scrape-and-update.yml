@@ -20,7 +20,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install Dependencies
-        run: pip install requests
+        run: pip install -r requirements.txt
 
       - name: Run Scraper
         run: python scrape_faelle_2025.py
