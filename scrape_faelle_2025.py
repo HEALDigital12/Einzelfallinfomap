@@ -8,7 +8,7 @@ import time
 
 # Konfiguration
 SUCHBEGRIFFE = ["Messer", "Raub", "Tötung", "Körperverletzung", "Überfall", "Gewalt"]
-MAX_FAELLE = 50
+MAX_FAELLE = 20
 HEUTE = datetime.now().strftime("%d.%m.%Y")
 ERGEBNIS_DATEI = "public/data/faelle_2025.json"
 
