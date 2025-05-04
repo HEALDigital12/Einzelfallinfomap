@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 import time
 import logging
 from geopy.geocoders import Nominatim
+import feedparser
 
 # Logging einrichten
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -20,12 +21,22 @@ SUCHBEGRIFFE_DELIKT = {
     "Raub": ["raub", "überfall"],
     "Gewalt": ["gewalt"]
 }
-MAX_FAELLE = 20  # Erhöhe die Anzahl, um mehr potenzielle Fälle zu finden
+MAX_FAELLE = 10
 HEUTE = datetime.now().date()
 ERGEBNIS_DATEI = "public/data/faelle_2025.json"
 USER_AGENT = "HEALDIGITAL-Scraper"
-NOMINATIM_DELAY = 1  # Sekunde Pause zwischen Geocoding-Anfragen
+NOMINATIM_DELAY = 1
 GEOLOCATOR = Nominatim(user_agent=USER_AGENT, timeout=5)
+# Hinzugefügte RSS-Feed-URLs der Polizei
+RSS_FEED_URLS = [
+    "https://www.presseportal.de/rss/dienststellen/110978",  # Polizei Berlin
+    "https://www.presseportal.de/rss/dienststellen/110987",  # Polizei Hamburg
+    "https://www.presseportal.de/rss/dienststellen/110993",  # Polizei München
+    "https://www.presseportal.de/rss/dienststellen/110997",  # Polizei Köln
+    "https://www.presseportal.de/rss/dienststellen/111001",  # Polizei Frankfurt
+    "https://www.presseportal.de/rss/dienststellen/110962",  # Polizei Baden-Württemberg
+    # Füge hier weitere RSS-Feed-URLs hinzu, die du findest
+]
 
 def get_delikt_und_farbe(titel):
     for delikt, keywords in SUCHBEGRIFFE_DELIKT.items():
@@ -42,12 +53,11 @@ def get_delikt_und_farbe(titel):
                 return delikt, farbzuordnung.get(delikt, "gray")
     return "Sonstiges", "gray"
 
-# Geokodierung per OpenStreetMap mit Fehlerbehandlung
 def geokodiere(ort):
     url = f"https://nominatim.openstreetmap.org/search?format=json&q={ort}, Deutschland"
     try:
         response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=10)
-        response.raise_for_status()  # Wirft eine Exception für HTTP-Fehler
+        response.raise_for_status()
         daten = response.json()
         if daten and len(daten) > 0:
             return [float(daten[0]["lat"]), float(daten[0]["lon"])]
@@ -59,13 +69,11 @@ def geokodiere(ort):
         logging.error(f"Unerwarteter Fehler beim Geokodieren von '{ort}': {e}")
     return [0.0, 0.0]
 
-# Presseportal-Scraping
-def finde_faelle():
+def scrape_presseportal():
     ergebnisse = []
     seite = 1
 
     while len(ergebnisse) < MAX_FAELLE:
-        # Spezifischere Suche nach Blaulicht-Meldungen
         url = f"https://www.presseportal.de/blaulicht/nr/alle/seite/{seite}"
         try:
             response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=10)
@@ -74,7 +82,7 @@ def finde_faelle():
             beitraege = soup.select(".news")
 
             if not beitraege:
-                logging.info(f"Keine weiteren Beiträge auf Seite {seite} gefunden.")
+                logging.info(f"Keine weiteren Beiträge auf Presseportal Seite {seite} gefunden.")
                 break
 
             for eintrag in beitraege:
@@ -90,18 +98,15 @@ def finde_faelle():
                 link = "https://www.presseportal.de" + link_raw["href"]
 
                 try:
-                    # Datum des Beitrags parsen (Format kann variieren)
                     beitrags_datum = datetime.strptime(datum_str, '%d.%m.%Y').date()
-                    # Nur heutige oder gestrige Meldungen berücksichtigen (um keine alten Fälle zu ziehen)
                     if beitrags_datum < HEUTE - timedelta(days=1) or beitrags_datum > HEUTE:
                         continue
                 except ValueError:
-                    logging.warning(f"Konnte Datum '{datum_str}' nicht parsen.")
+                    logging.warning(f"Konnte Datum '{datum_str}' von Presseportal nicht parsen.")
                     continue
 
                 delikt, farbe = get_delikt_und_farbe(titel)
                 if delikt != "Sonstiges":
-                    # Versuche, den Ort aus dem Titel zu extrahieren (verbesserte Logik)
                     ort_teile = titel.split(" - ")[0].split(": ")[-1].split(",")[0].strip()
                     koords = geokodiere(ort_teile)
 
@@ -117,26 +122,65 @@ def finde_faelle():
                     if len(ergebnisse) >= MAX_FAELLE:
                         break
 
-            time.sleep(1)  # Höfliche Pause
+            time.sleep(1)
 
         except requests.exceptions.RequestException as e:
-            logging.error(f"Fehler beim Abrufen von '{url}': {e}")
+            logging.error(f"Fehler beim Abrufen von Presseportal Seite {seite}: {e}")
             break
         except Exception as e:
-            logging.error(f"Unerwarteter Fehler beim Scrapen von '{url}': {e}")
+            logging.error(f"Unerwarteter Fehler beim Scrapen von Presseportal Seite {seite}: {e}")
             break
 
         seite += 1
 
     return ergebnisse
 
+def scrape_rss_feeds(rss_urls):
+    ergebnisse = []
+    for url in rss_urls:
+        logging.info(f"Verarbeite RSS-Feed: {url}")
+        try:
+            feed = feedparser.parse(url)
+            for entry in feed.entries:
+                titel = entry.title
+                link = entry.link
+                datum_obj = getattr(entry, 'published_parsed', getattr(entry, 'updated_parsed', None))
+                if datum_obj:
+                    beitrags_datum = datetime(*datum_obj[:3]).date()
+                    if beitrags_datum < HEUTE - timedelta(days=2) or beitrags_datum > HEUTE:
+                        continue
+                else:
+                    logging.warning(f"Konnte Datum für Eintrag '{titel}' nicht parsen.")
+                    continue
+
+                delikt, farbe = get_delikt_und_farbe(titel)
+                if delikt != "Sonstiges":
+                    # Versuche, den Ort aus dem Titel zu extrahieren (kann verbessert werden)
+                    ort_teile = titel.split(" - ")[0].split(": ")[-1].split(",")[0].strip()
+                    koords = geokodiere(ort_teile)
+
+                    ergebnisse.append({
+                        "delikt": delikt,
+                        "ort": ort_teile,
+                        "datum": beitrags_datum.strftime("%Y-%m-%d"),
+                        "quelle": link,
+                        "koordinaten": koords,
+                        "farbe": farbe
+                    })
+        except Exception as e:
+            logging.error(f"Fehler beim Verarbeiten des RSS-Feeds '{url}': {e}")
+        time.sleep(1)
+    return ergebnisse
+
 # Hauptfunktion
 def main():
-    faelle = finde_faelle()
+    presseportal_faelle = scrape_presseportal()
+    rss_feed_faelle = scrape_rss_feeds(RSS_FEED_URLS)
+    alle_faelle = presseportal_faelle + rss_feed_faelle
 
     daten = {
         "last_updated": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "faelle": faelle
+        "faelle": alle_faelle
     }
 
     with open(ERGEBNIS_DATEI, "w", encoding="utf-8") as f:
