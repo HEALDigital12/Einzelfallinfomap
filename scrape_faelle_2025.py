@@ -116,8 +116,6 @@ def scrape_presseportal():
 
                 delikt, farbe = get_delikt_und_farbe(titel)
                 if delikt != "Sonstiges":
-                    # Hier war die alte Logik zur Ortsfindung
-                    # ort_teile = titel.split(" - ")[0].split(": ")[-1].split(",")[0].strip()
                     orte = finde_orte_nlp(titel)
                     ort = orte[0] if orte else None  # Nimm den ersten gefundenen Ort
 
@@ -168,8 +166,6 @@ def scrape_rss_feeds(rss_urls):
 
                 delikt, farbe = get_delikt_und_farbe(titel)
                 if delikt != "Sonstiges":
-                    # Hier war die alte Logik zur Ortsfindung
-                    # ort_teile = titel.split(" - ")[0].split(": ")[-1].split(",")[0].strip()
                     orte = finde_orte_nlp(titel)
                     ort = orte[0] if orte else None  # Nimm den ersten gefundenen Ort
 
