@@ -1,0 +1,44 @@
+name: Scrape und Karte erstellen
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Täglich um 6:00 UTC (8:00 CEST in Esbjerg während Sommerzeit)
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  scrape_and_map:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GOOGLE_CLOUD_CREDENTIALS }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run the scraper
+        run: python scrape_faelle_2025.py
+
+      - name: Create map
+        run: python create_map.py
+        env:
+          MAPBOX_ACCESS_TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
