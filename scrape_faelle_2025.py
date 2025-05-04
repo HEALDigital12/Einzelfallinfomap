@@ -8,6 +8,7 @@ import time
 import logging
 from geopy.geocoders import Nominatim
 import feedparser
+from google.cloud import language_v1
 
 # Logging einrichten
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -21,7 +22,7 @@ SUCHBEGRIFFE_DELIKT = {
     "Raub": ["raub", "überfall"],
     "Gewalt": ["gewalt"]
 }
-MAX_FAELLE = 50
+MAX_FAELLE = 10
 HEUTE = datetime.now().date()
 ERGEBNIS_DATEI = "public/data/faelle_2025.json"
 USER_AGENT = "HEALDIGITAL-Scraper"
@@ -37,6 +38,14 @@ RSS_FEED_URLS = [
     "https://www.presseportal.de/rss/dienststellen/110962",  # Polizei Baden-Württemberg
     # Füge hier weitere RSS-Feed-URLs hinzu, die du findest
 ]
+
+def finde_orte_nlp(text):
+    """Extrahiert Orte aus dem Text mit der Vertex AI Natural Language API."""
+    client = language_v1.LanguageServiceClient()
+    document = language_v1.types.Document(content=text, type=language_v1.enums.Document.Type.PLAIN_TEXT)
+    response = client.analyze_entities(document=document)
+    orte = [entity.name for entity in response.entities if entity.type == language_v1.enums.Entity.Type.LOCATION]
+    return orte
 
 def get_delikt_und_farbe(titel):
     for delikt, keywords in SUCHBEGRIFFE_DELIKT.items():
@@ -107,17 +116,21 @@ def scrape_presseportal():
 
                 delikt, farbe = get_delikt_und_farbe(titel)
                 if delikt != "Sonstiges":
-                    ort_teile = titel.split(" - ")[0].split(": ")[-1].split(",")[0].strip()
-                    koords = geokodiere(ort_teile)
+                    # Hier war die alte Logik zur Ortsfindung
+                    # ort_teile = titel.split(" - ")[0].split(": ")[-1].split(",")[0].strip()
+                    orte = finde_orte_nlp(titel)
+                    ort = orte[0] if orte else None  # Nimm den ersten gefundenen Ort
 
-                    ergebnisse.append({
-                        "delikt": delikt,
-                        "ort": ort_teile,
-                        "datum": beitrags_datum.strftime("%Y-%m-%d"),
-                        "quelle": link,
-                        "koordinaten": koords,
-                        "farbe": farbe
-                    })
+                    if ort:
+                        koords = geokodiere(ort)
+                        ergebnisse.append({
+                            "delikt": delikt,
+                            "ort": ort,
+                            "datum": beitrags_datum.strftime("%Y-%m-%d"),
+                            "quelle": link,
+                            "koordinaten": koords,
+                            "farbe": farbe
+                        })
 
                     if len(ergebnisse) >= MAX_FAELLE:
                         break
@@ -155,18 +168,21 @@ def scrape_rss_feeds(rss_urls):
 
                 delikt, farbe = get_delikt_und_farbe(titel)
                 if delikt != "Sonstiges":
-                    # Versuche, den Ort aus dem Titel zu extrahieren (kann verbessert werden)
-                    ort_teile = titel.split(" - ")[0].split(": ")[-1].split(",")[0].strip()
-                    koords = geokodiere(ort_teile)
+                    # Hier war die alte Logik zur Ortsfindung
+                    # ort_teile = titel.split(" - ")[0].split(": ")[-1].split(",")[0].strip()
+                    orte = finde_orte_nlp(titel)
+                    ort = orte[0] if orte else None  # Nimm den ersten gefundenen Ort
 
-                    ergebnisse.append({
-                        "delikt": delikt,
-                        "ort": ort_teile,
-                        "datum": beitrags_datum.strftime("%Y-%m-%d"),
-                        "quelle": link,
-                        "koordinaten": koords,
-                        "farbe": farbe
-                    })
+                    if ort:
+                        koords = geokodiere(ort)
+                        ergebnisse.append({
+                            "delikt": delikt,
+                            "ort": ort,
+                            "datum": beitrags_datum.strftime("%Y-%m-%d"),
+                            "quelle": link,
+                            "koordinaten": koords,
+                            "farbe": farbe
+                        })
         except Exception as e:
             logging.error(f"Fehler beim Verarbeiten des RSS-Feeds '{url}': {e}")
         time.sleep(1)
