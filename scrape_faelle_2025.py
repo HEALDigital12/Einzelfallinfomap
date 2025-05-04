@@ -22,7 +22,7 @@ SUCHBEGRIFFE_DELIKT = {
     "Raub": ["raub", "überfall"],
     "Gewalt": ["gewalt"]
 }
-MAX_FAELLE = 10
+MAX_FAELLE = 100
 HEUTE = datetime.now().date()
 ERGEBNIS_DATEI = "public/data/faelle_2025.json"
 USER_AGENT = "HEALDIGITAL-Scraper"
