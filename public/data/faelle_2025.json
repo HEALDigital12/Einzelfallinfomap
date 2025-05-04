@@ -1,16 +1,4 @@
 {
-  "last_updated": "2025-04-04T20:32:49Z",
-  "faelle": [
-    {
-      "delikt": "Tötungsdelikt",
-      "ort": "Berlin Neukölln",
-      "datum": "2025-04-01",
-      "quelle": "https://presseportal.de/beispiel",
-      "koordinaten": [
-        52.4795,
-        13.4386
-      ],
-      "farbe": "red"
-    }
-  ]
+  "last_updated": "2025-05-04T18:49:12Z",
+  "faelle": []
 }
