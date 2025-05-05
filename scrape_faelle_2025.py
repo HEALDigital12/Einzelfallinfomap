@@ -148,11 +148,12 @@ def scrape_presseportal():
 
 def scrape_rss_feeds(rss_urls):
     ergebnisse = []
-    logging.info("+++ Überprüfe: Die erweiterte scrape_rss_feeds-Funktion wird ausgeführt +++") # <--- Hinzugefügte Zeile
+    logging.info("+++ Überprüfe: Die erweiterte scrape_rss_feeds-Funktion wird ausgeführt +++")
     for url in rss_urls:
         logging.info(f"Verarbeite RSS-Feed: {url}")
         try:
             feed = feedparser.parse(url)
+            logging.info(f"  Anzahl der Einträge im Feed: {len(feed.entries)}") # <--- Hinzugefügte Zeile
             for entry in feed.entries:
                 logging.info(f"Gefundener RSS-Feed-Eintrag: Titel='{entry.title}', Link='{entry.link}'")
                 titel = entry.title
