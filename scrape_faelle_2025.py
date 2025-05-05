@@ -130,8 +130,8 @@ def scrape_presseportal():
                             "farbe": farbe
                         })
 
-                    if len(ergebnisse) >= MAX_FAELLE:
-                        break
+                if len(ergebnisse) >= MAX_FAELLE:
+                    break
 
             time.sleep(1)
 
@@ -153,12 +153,14 @@ def scrape_rss_feeds(rss_urls):
         try:
             feed = feedparser.parse(url)
             for entry in feed.entries:
+                logging.info(f"Gefundener RSS-Feed-Eintrag: Titel='{entry.title}', Link='{entry.link}'")
                 titel = entry.title
                 link = entry.link
                 datum_obj = getattr(entry, 'published_parsed', getattr(entry, 'updated_parsed', None))
                 if datum_obj:
                     beitrags_datum = datetime(*datum_obj[:3]).date()
                     if beitrags_datum < HEUTE - timedelta(days=2) or beitrags_datum > HEUTE:
+                        logging.info(f"  Eintrag '{titel}' vom {beitrags_datum} wird übersprungen (außerhalb des Zeitfensters).")
                         continue
                 else:
                     logging.warning(f"Konnte Datum für Eintrag '{titel}' nicht parsen.")
@@ -166,6 +168,7 @@ def scrape_rss_feeds(rss_urls):
 
                 delikt, farbe = get_delikt_und_farbe(titel)
                 if delikt != "Sonstiges":
+                    logging.info(f"  '{titel}' enthält Stichwort für Delikt '{delikt}'.")
                     orte = finde_orte_nlp(titel)
                     ort = orte[0] if orte else None  # Nimm den ersten gefundenen Ort
 
@@ -179,6 +182,10 @@ def scrape_rss_feeds(rss_urls):
                             "koordinaten": koords,
                             "farbe": farbe
                         })
+                    else:
+                        logging.warning(f"  Konnte keinen Ort für '{titel}' extrahieren.")
+                else:
+                    logging.info(f"  '{titel}' enthält keine relevanten Stichwörter.")
         except Exception as e:
             logging.error(f"Fehler beim Verarbeiten des RSS-Feeds '{url}': {e}")
         time.sleep(1)
