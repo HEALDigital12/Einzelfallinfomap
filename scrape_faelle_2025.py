@@ -8,9 +8,8 @@ import time
 import logging
 from geopy.geocoders import Nominatim
 import feedparser
-from google.cloud.language_v1.services.language_service import LanguageServiceClient
 from google.cloud.language_v1.types import Document
-from google.cloud.language_v1 import enums
+from google.cloud import language_v1
 
 # Logging einrichten
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -36,10 +35,10 @@ RSS_FEED_URLS = [
 ]
 
 def finde_orte_nlp(text):
-    client = LanguageServiceClient()
-    document = Document(content=text, type=enums.Document.Type.PLAIN_TEXT)
+    client = language_v1.LanguageServiceClient()
+    document = Document(content=text, type=language_v1.Document.Type.PLAIN_TEXT)
     response = client.analyze_entities(request={"document": document})
-    orte = [entity.name for entity in response.entities if entity.type == enums.Entity.Type.LOCATION]
+    orte = [entity.name for entity in response.entities if entity.type_ == language_v1.Entity.Type.LOCATION]
     return orte
 
 def get_delikt_und_farbe(titel):
