@@ -28,15 +28,9 @@ ERGEBNIS_DATEI = "public/data/faelle_2025.json"
 USER_AGENT = "HEALDIGITAL-Scraper"
 NOMINATIM_DELAY = 1
 GEOLOCATOR = Nominatim(user_agent=USER_AGENT, timeout=5)
-# Hinzugefügte RSS-Feed-URLs der Polizei
+# Aktuelle RSS-Feed-URL
 RSS_FEED_URLS = [
-    "https://www.presseportal.de/rss/dienststellen/110978",  # Polizei Berlin
-    "https://www.presseportal.de/rss/dienststellen/110987",  # Polizei Hamburg
-    "https://www.presseportal.de/rss/dienststellen/110993",  # Polizei München
-    "https://www.presseportal.de/rss/dienststellen/110997",  # Polizei Köln
-    "https://www.presseportal.de/rss/dienststellen/111001",  # Polizei Frankfurt
-    "https://www.presseportal.de/rss/dienststellen/110962",  # Polizei Baden-Württemberg
-    # Füge hier weitere RSS-Feed-URLs hinzu, die du findest
+    "https://www.presseportal.de/rss/polizei.rss2"
 ]
 
 def finde_orte_nlp(text):
@@ -153,7 +147,7 @@ def scrape_rss_feeds(rss_urls):
         logging.info(f"Verarbeite RSS-Feed: {url}")
         try:
             feed = feedparser.parse(url)
-            logging.info(f"  Anzahl der Einträge im Feed: {len(feed.entries)}") # <--- Hinzugefügte Zeile
+            logging.info(f"  Anzahl der Einträge im Feed: {len(feed.entries)}")
             for entry in feed.entries:
                 logging.info(f"Gefundener RSS-Feed-Eintrag: Titel='{entry.title}', Link='{entry.link}'")
                 titel = entry.title
