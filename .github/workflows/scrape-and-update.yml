@@ -41,11 +41,8 @@ jobs:
         env:
           GMAPS_API_KEY: ${{ secrets.GMAPS_API_KEY }}
 
-  - name: Deploy to GitHub Pages
-  uses: peaceiris/actions-gh-pages@v3
-  with:
-    github_token: ${{ secrets.GITHUB_TOKEN }}
-    publish_dir: ./public
-    publish_branch: gh-pages
-    commit_message: "Automatisches Update: ${{ github.event.head_commit.timestamp }}"
-
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
