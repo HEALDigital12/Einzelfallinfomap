@@ -21,7 +21,9 @@ SUCHBEGRIFFE_DELIKT = {
     "Sexualdelikt": ["vergewaltigung", "sexueller übergriff", "belästigung"],
     "Messerstecherei": ["messerstecherei", "messerangriff"],
     "Raub": ["raub", "überfall"],
-    "Gewalt": ["gewalt"]
+    "Gewalt": ["gewalt"],
+    "Verkehrsunfall": ["unfall", "zusammenstoß", "verletzte"],
+    "Einbruch": ["einbruch", "eingebrochen"]
 }
 
 MAX_FAELLE = 100
@@ -51,7 +53,9 @@ def get_delikt_und_farbe(titel):
                     "Sexualdelikt": "violet",
                     "Messerstecherei": "darkred",
                     "Raub": "yellow",
-                    "Gewalt": "blue"
+                    "Gewalt": "blue",
+                    "Verkehrsunfall": "lightblue",
+                    "Einbruch": "brown"
                 }
                 return delikt, farbzuordnung.get(delikt, "gray")
     return "Sonstiges", "gray"
