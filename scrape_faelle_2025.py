@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import json
 import requests
 from datetime import datetime, timedelta
@@ -8,7 +7,8 @@ import time
 import logging
 from geopy.geocoders import Nominatim
 import feedparser
-from google.cloud import language_v1
+from google.cloud.language_v1.services.language_service import LanguageServiceClient
+from google.cloud.language_v1.types import Document, Entity, AnalyzeEntitiesResponse
 from google.cloud.language_v1 import enums
 
 # Logging einrichten
@@ -36,10 +36,10 @@ RSS_FEED_URLS = [
 
 def finde_orte_nlp(text):
     """Extrahiert Orte aus dem Text mit der Vertex AI Natural Language API."""
-    client = language_v1.LanguageServiceClient()
-    document = language_v1.types.Document(content=text, type=enums.Document.Type.PLAIN_TEXT)
-    response = client.analyze_entities(document=document)
-    orte = [entity.name for entity in response.entities if entity.type == enums.Entity.Type.LOCATION]
+    client = LanguageServiceClient()
+    document = Document(content=text, type=enums.Document.Type.PLAIN_TEXT)
+    response = client.analyze_entities(request={"document": document}) # Expliziter Request
+    orte = [entity.name for entity in response.entities if entity.type == enums.EntityType.LOCATION]
     return orte
 
 def get_delikt_und_farbe(titel):
