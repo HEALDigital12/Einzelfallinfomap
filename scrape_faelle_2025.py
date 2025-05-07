@@ -8,8 +8,8 @@ import time
 import logging
 from geopy.geocoders import Nominatim
 import feedparser
-from google.cloud.language_v1.types import Document
 from google.cloud import language_v1
+from google.cloud.language_v1.types import Document, Entity
 
 # Logging einrichten
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -38,7 +38,7 @@ def finde_orte_nlp(text):
     client = language_v1.LanguageServiceClient()
     document = Document(content=text, type=language_v1.Document.Type.PLAIN_TEXT)
     response = client.analyze_entities(request={"document": document})
-    orte = [entity.name for entity in response.entities if entity.type_ == language_v1.Entity.Type.LOCATION]
+    orte = [entity.name for entity in response.entities if entity.type == Entity.Type.LOCATION]
     return orte
 
 def get_delikt_und_farbe(titel):
