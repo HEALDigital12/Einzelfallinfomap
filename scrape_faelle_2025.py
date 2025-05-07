@@ -203,9 +203,13 @@ def main():
 
     logging.info(f"Daten zum Schreiben: {daten}")
 
+    os.makedirs(os.path.dirname(ERGEBNIS_DATEI), exist_ok=True)
+
     with open(ERGEBNIS_DATEI, "w", encoding="utf-8") as f:
         json.dump(daten, f, ensure_ascii=False, indent=2)
+
     logging.info(f"Daten erfolgreich geschrieben nach: {ERGEBNIS_DATEI}")
+
 
 if __name__ == "__main__":
     main()
