@@ -8,8 +8,8 @@ import time
 import logging
 from geopy.geocoders import Nominatim
 import feedparser
-from google.cloud import language
-from google.cloud.language import enums
+from google.cloud import language_v1
+from google.cloud.language_v1 import enums
 
 # Logging einrichten
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -36,8 +36,8 @@ RSS_FEED_URLS = [
 
 def finde_orte_nlp(text):
     """Extrahiert Orte aus dem Text mit der Vertex AI Natural Language API."""
-    client = language.LanguageServiceClient()
-    document = language.types.Document(content=text, type=enums.Document.Type.PLAIN_TEXT)
+    client = language_v1.LanguageServiceClient()
+    document = language_v1.types.Document(content=text, type=enums.Document.Type.PLAIN_TEXT)
     response = client.analyze_entities(document=document)
     orte = [entity.name for entity in response.entities if entity.type == enums.Entity.Type.LOCATION]
     return orte
