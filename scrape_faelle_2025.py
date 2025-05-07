@@ -8,7 +8,8 @@ import time
 import logging
 from geopy.geocoders import Nominatim
 import feedparser
-from google.cloud import language_v1
+from google.cloud import language
+from google.cloud.language import enums
 
 # Logging einrichten
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -35,10 +36,10 @@ RSS_FEED_URLS = [
 
 def finde_orte_nlp(text):
     """Extrahiert Orte aus dem Text mit der Vertex AI Natural Language API."""
-    client = language_v1.LanguageServiceClient()
-    document = language_v1.types.Document(content=text, type=language_v1.enums.Document.Type.PLAIN_TEXT)
+    client = language.LanguageServiceClient()
+    document = language.types.Document(content=text, type=enums.Document.Type.PLAIN_TEXT)
     response = client.analyze_entities(document=document)
-    orte = [entity.name for entity in response.entities if entity.type == language_v1.enums.Entity.Type.LOCATION]
+    orte = [entity.name for entity in response.entities if entity.type == enums.Entity.Type.LOCATION]
     return orte
 
 def get_delikt_und_farbe(titel):
@@ -127,79 +128,79 @@ def scrape_presseportal():
                 if len(ergebnisse) >= MAX_FAELLE:
                     break
 
-            time.sleep(1)
+                time.sleep(1)
 
-        except requests.exceptions.RequestException as e:
-            logging.error(f"Fehler beim Abrufen von Presseportal Seite {seite}: {e}")
-            break
-        except Exception as e:
-            logging.error(f"Unerwarteter Fehler beim Scrapen von Presseportal Seite {seite}: {e}")
-            break
+            except requests.exceptions.RequestException as e:
+                logging.error(f"Fehler beim Abrufen von Presseportal Seite {seite}: {e}")
+                break
+            except Exception as e:
+                logging.error(f"Unerwarteter Fehler beim Scrapen von Presseportal Seite {seite}: {e}")
+                break
 
-        seite += 1
+                seite += 1
 
-    return ergebnisse
+            return ergebnisse
 
-def scrape_rss_feeds(rss_urls):
-    ergebnisse = []
-    logging.info("+++ Überprüfe: Die erweiterte scrape_rss_feeds-Funktion wird ausgeführt +++")
-    for url in rss_urls:
-        logging.info(f"Verarbeite RSS-Feed: {url}")
-        try:
-            feed = feedparser.parse(url)
-            logging.info(f"  Anzahl der Einträge im Feed: {len(feed.entries)}")
-            for entry in feed.entries:
-                logging.info(f"Gefundener RSS-Feed-Eintrag: Titel='{entry.title}', Link='{entry.link}'")
-                titel = entry.title
-                link = entry.link
-                datum_obj = getattr(entry, 'published_parsed', getattr(entry, 'updated_parsed', None))
-                if datum_obj:
-                    beitrags_datum = datetime(*datum_obj[:3]).date()
-                    if beitrags_datum < HEUTE - timedelta(days=2) or beitrags_datum > HEUTE:
-                        logging.info(f"  Eintrag '{titel}' vom {beitrags_datum} wird übersprungen (außerhalb des Zeitfensters).")
-                        continue
-                else:
-                    logging.warning(f"Konnte Datum für Eintrag '{titel}' nicht parsen.")
-                    continue
+        def scrape_rss_feeds(rss_urls):
+            ergebnisse = []
+            logging.info("+++ Überprüfe: Die erweiterte scrape_rss_feeds-Funktion wird ausgeführt +++")
+            for url in rss_urls:
+                logging.info(f"Verarbeite RSS-Feed: {url}")
+                try:
+                    feed = feedparser.parse(url)
+                    logging.info(f"  Anzahl der Einträge im Feed: {len(feed.entries)}")
+                    for entry in feed.entries:
+                        logging.info(f"Gefundener RSS-Feed-Eintrag: Titel='{entry.title}', Link='{entry.link}'")
+                        titel = entry.title
+                        link = entry.link
+                        datum_obj = getattr(entry, 'published_parsed', getattr(entry, 'updated_parsed', None))
+                        if datum_obj:
+                            beitrags_datum = datetime(*datum_obj[:3]).date()
+                            if beitrags_datum < HEUTE - timedelta(days=2) or beitrags_datum > HEUTE:
+                                logging.info(f"  Eintrag '{titel}' vom {beitrags_datum} wird übersprungen (außerhalb des Zeitfensters).")
+                                continue
+                        else:
+                            logging.warning(f"Konnte Datum für Eintrag '{titel}' nicht parsen.")
+                            continue
 
-                delikt, farbe = get_delikt_und_farbe(titel)
-                if delikt != "Sonstiges":
-                    logging.info(f"  '{titel}' enthält Stichwort für Delikt '{delikt}'.")
-                    orte = finde_orte_nlp(titel)
-                    ort = orte[0] if orte else None  # Nimm den ersten gefundenen Ort
+                        delikt, farbe = get_delikt_und_farbe(titel)
+                        if delikt != "Sonstiges":
+                            logging.info(f"  '{titel}' enthält Stichwort für Delikt '{delikt}'.")
+                            orte = finde_orte_nlp(titel)
+                            ort = orte[0] if orte else None  # Nimm den ersten gefundenen Ort
 
-                    if ort:
-                        koords = geokodiere(ort)
-                        ergebnisse.append({
-                            "delikt": delikt,
-                            "ort": ort,
-                            "datum": beitrags_datum.strftime("%Y-%m-%d"),
-                            "quelle": link,
-                            "koordinaten": koords,
-                            "farbe": farbe
-                        })
-                    else:
-                        logging.warning(f"  Konnte keinen Ort für '{titel}' extrahieren.")
-                else:
-                    logging.info(f"  '{titel}' enthält keine relevanten Stichwörter.")
-        except Exception as e:
-            logging.error(f"Fehler beim Verarbeiten des RSS-Feeds '{url}': {e}")
-        time.sleep(1)
-    return ergebnisse
+                            if ort:
+                                koords = geokodiere(ort)
+                                ergebnisse.append({
+                                    "delikt": delikt,
+                                    "ort": ort,
+                                    "datum": beitrags_datum.strftime("%Y-%m-%d"),
+                                    "quelle": link,
+                                    "koordinaten": koords,
+                                    "farbe": farbe
+                                })
+                            else:
+                                logging.warning(f"  Konnte keinen Ort für '{titel}' extrahieren.")
+                        else:
+                            logging.info(f"  '{titel}' enthält keine relevanten Stichwörter.")
+                except Exception as e:
+                    logging.error(f"Fehler beim Verarbeiten des RSS-Feeds '{url}': {e}")
+                time.sleep(1)
+            return ergebnisse
 
-# Hauptfunktion
-def main():
-    presseportal_faelle = scrape_presseportal()
-    rss_feed_faelle = scrape_rss_feeds(RSS_FEED_URLS)
-    alle_faelle = presseportal_faelle + rss_feed_faelle
+        # Hauptfunktion
+        def main():
+            presseportal_faelle = scrape_presseportal()
+            rss_feed_faelle = scrape_rss_feeds(RSS_FEED_URLS)
+            alle_faelle = presseportal_faelle + rss_feed_faelle
 
-    daten = {
-        "last_updated": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "faelle": alle_faelle
-    }
+            daten = {
+                "last_updated": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "faelle": alle_faelle
+            }
 
-    with open(ERGEBNIS_DATEI, "w", encoding="utf-8") as f:
-        json.dump(daten, f, ensure_ascii=False, indent=2)
+            with open(ERGEBNIS_DATEI, "w", encoding="utf-8") as f:
+                json.dump(daten, f, ensure_ascii=False, indent=2)
 
-if __name__ == "__main__":
-    main()
+        if __name__ == "__main__":
+            main()
