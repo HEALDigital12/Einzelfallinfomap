@@ -174,9 +174,9 @@ def scrape_rss_feeds(rss_urls):
     return ergebnisse
 
 def main():
-    presseportal_faelle = scrape_presseportal()
+    # presseportal_faelle = scrape_presseportal()
     rss_feed_faelle = scrape_rss_feeds(RSS_FEED_URLS)
-    alle_faelle = presseportal_faelle + rss_feed_faelle
+    alle_faelle = rss_feed_faelle
 
     daten = {
         "last_updated": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
