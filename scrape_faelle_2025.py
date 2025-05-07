@@ -157,20 +157,30 @@ def scrape_rss_feeds(rss_urls):
                 delikt, farbe = get_delikt_und_farbe(titel)
                 logging.info(f"  Erkanntes Delikt: {delikt}")  # Zeige das erkannte Delikt
                 if delikt != "Sonstiges":
-                    orte = finde_orte_nlp(titel)
-                    logging.info(f"  Gefundene Orte: {orte}")  # Zeige die gefundenen Orte
+                    orte_titel = finde_orte_nlp(titel)
+                    orte_beschreibung = finde_orte_nlp(getattr(entry, 'description', ''))
+                    orte = list(set(orte_titel + orte_beschreibung)) # Kombiniere und entferne Duplikate
+                    logging.info(f"  Gefundene Orte (Titel): {orte_titel}") # Zeige Orte aus dem Titel
+                    logging.info(f"  Gefundene Orte (Beschreibung): {orte_beschreibung}") # Zeige Orte aus der Beschreibung
                     ort = orte[0] if orte else None
 
-                    if ort:
-                        koords = geokodiere(ort)
-                        ergebnisse.append({
-                            "delikt": delikt,
-                            "ort": ort,
-                            "datum": beitrags_datum.strftime("%Y-%m-%d"),
-                            "quelle": link,
-                            "koordinaten": koords,
-                            "farbe": farbe
-                        })
+                    datum_obj = getattr(entry, 'published_parsed', getattr(entry, 'updated_parsed', None))
+                    if datum_obj:
+                        beitrags_datum = datetime(*datum_obj[:3]).date()
+                        if beitrags_datum < HEUTE - timedelta(days=2) or beitrags_datum > HEUTE:
+                            continue
+                        if ort:
+                            koords = geokodiere(ort)
+                            ergebnisse.append({
+                                "delikt": delikt,
+                                "ort": ort,
+                                "datum": beitrags_datum.strftime("%Y-%m-%d"),
+                                "quelle": link,
+                                "koordinaten": koords,
+                                "farbe": farbe
+                            })
+                    else:
+                        logging.warning(f"Konnte Datum für Eintrag '{titel}' nicht parsen.")
 
         except Exception as e:
             logging.error(f"Fehler beim RSS-Feed '{url}': {e}")
