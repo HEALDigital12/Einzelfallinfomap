@@ -149,19 +149,12 @@ def scrape_rss_feeds(rss_urls):
             feed = feedparser.parse(url)
             for entry in feed.entries:
                 titel = entry.title
-                link = entry.link
-                datum_obj = getattr(entry, 'published_parsed', getattr(entry, 'updated_parsed', None))
-                if datum_obj:
-                    beitrags_datum = datetime(*datum_obj[:3]).date()
-                    if beitrags_datum < HEUTE - timedelta(days=2) or beitrags_datum > HEUTE:
-                        continue
-                else:
-                    logging.warning(f"Konnte Datum für Eintrag '{titel}' nicht parsen.")
-                    continue
-
+                logging.info(f"  Titel des Eintrags: {titel}")  # Zeige den Titel
                 delikt, farbe = get_delikt_und_farbe(titel)
+                logging.info(f"  Erkanntes Delikt: {delikt}")  # Zeige das erkannte Delikt
                 if delikt != "Sonstiges":
                     orte = finde_orte_nlp(titel)
+                    logging.info(f"  Gefundene Orte: {orte}")  # Zeige die gefundenen Orte
                     ort = orte[0] if orte else None
 
                     if ort:
