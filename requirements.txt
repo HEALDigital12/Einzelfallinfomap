@@ -5,3 +5,4 @@ feedparser
 google-cloud-language==2.3.0
 protobuf>=3.20.0
 grpcio>=1.51.1
+folium
