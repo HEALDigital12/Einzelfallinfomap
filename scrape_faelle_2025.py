@@ -165,6 +165,8 @@ def scrape_rss_feeds(rss_urls):
                     ort = orte[0] if orte else None
 
                     datum_obj = getattr(entry, 'published_parsed', getattr(entry, 'updated_parsed', None))
+                    link = entry.link # Stelle sicher, dass 'link' hier verfügbar ist
+
                     if datum_obj:
                         beitrags_datum = datetime(*datum_obj[:3]).date()
                         if beitrags_datum < HEUTE - timedelta(days=2) or beitrags_datum > HEUTE:
