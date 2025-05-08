@@ -1,25 +1,25 @@
 {
-  "last_updated": "2025-05-08T08:40:03Z",
+  "last_updated": "2025-05-08T08:45:59Z",
   "faelle": [
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Straße",
+      "ort": "Hotelparkplatz",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/59458/6028999",
       "koordinaten": [
-        50.8705357,
-        7.4943548
+        52.1328092,
+        11.6102271
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Villingen",
+      "ort": "KN",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/110973/6028985",
       "koordinaten": [
-        48.0596619,
-        8.4598995
+        50.7747551,
+        6.0839856
       ],
       "farbe": "lightblue"
     },
@@ -36,23 +36,12 @@
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Süden",
+      "ort": "Anschlussstelle",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/110975/6028976",
       "koordinaten": [
-        54.4850995,
-        8.852271
-      ],
-      "farbe": "lightblue"
-    },
-    {
-      "delikt": "Verkehrsunfall",
-      "ort": "Hude",
-      "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/68438/6028974",
-      "koordinaten": [
-        54.3880564,
-        9.2148137
+        50.5977303,
+        8.8023723
       ],
       "farbe": "lightblue"
     }
