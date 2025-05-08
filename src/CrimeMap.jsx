@@ -37,22 +37,26 @@ function CrimeMap({ selectedTypes, selectedYear }) {
           // Bestehende Marker entfernen
           markerLayerRef.current.clearLayers();
 
-          // Neue Marker hinzufügen
-          newData.faelle.forEach(fall => {
-            const datumTeile = fall.datum.split('-');
-            const jahr = parseInt(datumTeile[0], 10); // Extrahiere das Jahr direkt
+          console.log("selectedYear in CrimeMap:", selectedYear);
+          console.log("selectedTypes in CrimeMap:", selectedTypes);
+          console.log("Geladene Daten:", newData.faelle);
 
-            if (jahr === selectedYear && selectedTypes.includes(fall.delikt)) {
-              const marker = L.circleMarker(fall.koordinaten, {
-                radius: 8,
-                color: fall.farbe,
-                fillColor: fall.farbe,
-                fillOpacity: 0.9
-              }).bindPopup(
-                `<strong>${fall.delikt}</strong><br>${fall.ort}<br>${fall.datum}<br><a href="${fall.quelle}" target="_blank">Zur Quelle</a>`
-              );
-              markerLayerRef.current.addLayer(marker);
-            }
+          // Neue Marker hinzufügen (Filterung temporär auskommentiert)
+          newData.faelle.forEach(fall => {
+            // const datumTeile = fall.datum.split('-');
+            // const jahr = parseInt(datumTeile[0], 10);
+
+            // if (jahr === selectedYear && selectedTypes.includes(fall.delikt)) {
+            const marker = L.circleMarker(fall.koordinaten, {
+              radius: 8,
+              color: fall.farbe,
+              fillColor: fall.farbe,
+              fillOpacity: 0.9
+            }).bindPopup(
+              `<strong>${fall.delikt}</strong><br>${fall.ort}<br>${fall.datum}<br><a href="${fall.quelle}" target="_blank">Zur Quelle</a>`
+            );
+            markerLayerRef.current.addLayer(marker);
+            // }
           });
         })
         .catch(err => console.error('Fehler beim Laden der Daten:', err));
