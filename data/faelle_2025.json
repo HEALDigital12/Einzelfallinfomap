@@ -1,9 +1,9 @@
 {
-  "last_updated": "2025-05-08T20:03:47Z",
+  "last_updated": "2025-05-08T20:09:36Z",
   "faelle": [
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Kirchstraße",
+      "ort": "Radevormwald",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/65843/6029759",
       "koordinaten": [
@@ -14,12 +14,12 @@
     },
     {
       "delikt": "Einbruch",
-      "ort": "Pirminiusstraße",
+      "ort": "Lauerswiese",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/138534/6029757",
       "koordinaten": [
-        49.1980105,
-        7.6026989
+        49.2889558,
+        7.1232879
       ],
       "farbe": "brown"
     },
@@ -36,23 +36,23 @@
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Bensheim",
+      "ort": "Autobahn 5",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/4969/6029752",
       "koordinaten": [
-        49.6977,
-        8.6288
+        52.3931089,
+        12.8358676
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Wächtersbach",
+      "ort": "Gelände",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/43561/6029750",
       "koordinaten": [
-        50.2724,
-        9.2857
+        52.5070127,
+        13.4543002
       ],
       "farbe": "lightblue"
     },
