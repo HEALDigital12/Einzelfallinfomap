@@ -1,6 +1,17 @@
 {
-  "last_updated": "2025-05-08T14:09:33Z",
+  "last_updated": "2025-05-08T14:15:29Z",
   "faelle": [
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Wittmund",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104233/6029630",
+      "koordinaten": [
+        53.5364786,
+        7.7462334
+      ],
+      "farbe": "orange"
+    },
     {
       "delikt": "Verkehrsunfall",
       "ort": "Lobberich",
@@ -25,58 +36,36 @@
     },
     {
       "delikt": "Einbruch",
-      "ort": "Wohnhaus",
+      "ort": "Räume",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/117697/6029624",
       "koordinaten": [
-        52.40142,
-        9.8023679
+        54.2468815,
+        10.050201
       ],
       "farbe": "brown"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Auberg",
+      "ort": "Gaudernbach",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/50153/6029622",
       "koordinaten": [
-        50.5845091,
-        10.6148369
+        50.4655067,
+        8.2018751
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Sexualdelikt",
-      "ort": "Schwarzwaldstraße",
+      "ort": "Hügelsheim",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/110975/6029621",
       "koordinaten": [
-        52.5985728,
-        13.4532513
+        48.7972825,
+        8.1118983
       ],
       "farbe": "violet"
-    },
-    {
-      "delikt": "Verkehrsunfall",
-      "ort": "Weide",
-      "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/65850/6029617",
-      "koordinaten": [
-        50.9440506,
-        8.2856424
-      ],
-      "farbe": "lightblue"
-    },
-    {
-      "delikt": "Einbruch",
-      "ort": "Konrad-Adenauer-Straße",
-      "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/43526/6029615",
-      "koordinaten": [
-        52.5212,
-        13.3743484
-      ],
-      "farbe": "brown"
     }
   ]
 }

@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_2ddbfd32aec51fa841828df77d57b4a6 {
+                #map_2303f2e4385c0b08c9a037fac63b9408 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,16 +39,16 @@
 <body>
     
     
-            <div class="folium-map" id="map_2ddbfd32aec51fa841828df77d57b4a6" ></div>
+            <div class="folium-map" id="map_2303f2e4385c0b08c9a037fac63b9408" ></div>
         
 </body>
 <script>
     
     
-            var map_2ddbfd32aec51fa841828df77d57b4a6 = L.map(
-                "map_2ddbfd32aec51fa841828df77d57b4a6",
+            var map_2303f2e4385c0b08c9a037fac63b9408 = L.map(
+                "map_2303f2e4385c0b08c9a037fac63b9408",
                 {
-                    center: [51.665785671428566, 9.74784587142857],
+                    center: [51.609482750000005, 7.802447000000001],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 6,
@@ -63,7 +63,7 @@
 
         
     
-            var tile_layer_cf1d96d8b2d2a34e28324e79f770f06c = L.tileLayer(
+            var tile_layer_a62f5361a25e6cf23312db72f85a1294 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -80,165 +80,142 @@
             );
         
     
-            tile_layer_cf1d96d8b2d2a34e28324e79f770f06c.addTo(map_2ddbfd32aec51fa841828df77d57b4a6);
+            tile_layer_a62f5361a25e6cf23312db72f85a1294.addTo(map_2303f2e4385c0b08c9a037fac63b9408);
         
     
-            var circle_marker_32285e5f25b8c8e929e1fe0e4dfbee09 = L.circleMarker(
+            var circle_marker_1d8a9092f42085d58130ce6708b9ebb5 = L.circleMarker(
+                [53.5364786, 7.7462334],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_2303f2e4385c0b08c9a037fac63b9408);
+        
+    
+        var popup_4e1a4563aafa1e67ef8bffca221f6b13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_582d971fd8351553a55872cd69a11949 = $(`<div id="html_582d971fd8351553a55872cd69a11949" style="width: 100.0%; height: 100.0%;"><b>Körperverletzung</b><br>Ort: Wittmund<br>Datum: 2025-05-08<br><a href='https://www.presseportal.de/blaulicht/pm/104233/6029630' target='_blank'>Quelle</a></div>`)[0];
+                popup_4e1a4563aafa1e67ef8bffca221f6b13.setContent(html_582d971fd8351553a55872cd69a11949);
+            
+        
+
+        circle_marker_1d8a9092f42085d58130ce6708b9ebb5.bindPopup(popup_4e1a4563aafa1e67ef8bffca221f6b13)
+        ;
+
+        
+    
+    
+            var circle_marker_8511171e06be0bd2262c994a4c097477 = L.circleMarker(
                 [51.3061888, 6.2763247],
                 {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_2ddbfd32aec51fa841828df77d57b4a6);
+            ).addTo(map_2303f2e4385c0b08c9a037fac63b9408);
         
     
-        var popup_a5d3b6968675167f893d305a4ee594b5 = L.popup({
+        var popup_addc4e5969b8e54ff87b7fe2cec57dff = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_8ebc6000efc60ead1f1f567576dad610 = $(`<div id="html_8ebc6000efc60ead1f1f567576dad610" style="width: 100.0%; height: 100.0%;"><b>Verkehrsunfall</b><br>Ort: Lobberich<br>Datum: 2025-05-08<br><a href='https://www.presseportal.de/blaulicht/pm/65857/6029627' target='_blank'>Quelle</a></div>`)[0];
-                popup_a5d3b6968675167f893d305a4ee594b5.setContent(html_8ebc6000efc60ead1f1f567576dad610);
+                var html_8b5c4fb76cd4c4f7cf2061712c600e8d = $(`<div id="html_8b5c4fb76cd4c4f7cf2061712c600e8d" style="width: 100.0%; height: 100.0%;"><b>Verkehrsunfall</b><br>Ort: Lobberich<br>Datum: 2025-05-08<br><a href='https://www.presseportal.de/blaulicht/pm/65857/6029627' target='_blank'>Quelle</a></div>`)[0];
+                popup_addc4e5969b8e54ff87b7fe2cec57dff.setContent(html_8b5c4fb76cd4c4f7cf2061712c600e8d);
             
         
 
-        circle_marker_32285e5f25b8c8e929e1fe0e4dfbee09.bindPopup(popup_a5d3b6968675167f893d305a4ee594b5)
+        circle_marker_8511171e06be0bd2262c994a4c097477.bindPopup(popup_addc4e5969b8e54ff87b7fe2cec57dff)
         ;
 
         
     
     
-            var circle_marker_69cb3af5fe23d23690ac489f5814dae2 = L.circleMarker(
+            var circle_marker_9ee4ea514b7d81ea404bb8c613c5d0b6 = L.circleMarker(
                 [51.3045584, 6.4281495],
                 {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_2ddbfd32aec51fa841828df77d57b4a6);
+            ).addTo(map_2303f2e4385c0b08c9a037fac63b9408);
         
     
-        var popup_d44042659a152ea4be8b8f39e0da48d3 = L.popup({
+        var popup_699ca154c58101c2c3843937aef4ded7 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_5c733ebadc363455ae33f582439467ca = $(`<div id="html_5c733ebadc363455ae33f582439467ca" style="width: 100.0%; height: 100.0%;"><b>Einbruch</b><br>Ort: Tönisvorst-Vorst<br>Datum: 2025-05-08<br><a href='https://www.presseportal.de/blaulicht/pm/65857/6029626' target='_blank'>Quelle</a></div>`)[0];
-                popup_d44042659a152ea4be8b8f39e0da48d3.setContent(html_5c733ebadc363455ae33f582439467ca);
+                var html_04ab7b6f38089ae9a328b86c63770f56 = $(`<div id="html_04ab7b6f38089ae9a328b86c63770f56" style="width: 100.0%; height: 100.0%;"><b>Einbruch</b><br>Ort: Tönisvorst-Vorst<br>Datum: 2025-05-08<br><a href='https://www.presseportal.de/blaulicht/pm/65857/6029626' target='_blank'>Quelle</a></div>`)[0];
+                popup_699ca154c58101c2c3843937aef4ded7.setContent(html_04ab7b6f38089ae9a328b86c63770f56);
             
         
 
-        circle_marker_69cb3af5fe23d23690ac489f5814dae2.bindPopup(popup_d44042659a152ea4be8b8f39e0da48d3)
+        circle_marker_9ee4ea514b7d81ea404bb8c613c5d0b6.bindPopup(popup_699ca154c58101c2c3843937aef4ded7)
         ;
 
         
     
     
-            var circle_marker_e880c5032506983c1562edc0245f9b8d = L.circleMarker(
-                [52.40142, 9.8023679],
+            var circle_marker_bf77910bc4f8b1a0d740f64d92b31723 = L.circleMarker(
+                [54.2468815, 10.050201],
                 {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_2ddbfd32aec51fa841828df77d57b4a6);
+            ).addTo(map_2303f2e4385c0b08c9a037fac63b9408);
         
     
-        var popup_5beaf90429a417a7b69437104092db1a = L.popup({
+        var popup_c1c74c0252db6722420adbaacab8aeaf = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_5ce8932498a992f6ba3c01c8779c1966 = $(`<div id="html_5ce8932498a992f6ba3c01c8779c1966" style="width: 100.0%; height: 100.0%;"><b>Einbruch</b><br>Ort: Wohnhaus<br>Datum: 2025-05-08<br><a href='https://www.presseportal.de/blaulicht/pm/117697/6029624' target='_blank'>Quelle</a></div>`)[0];
-                popup_5beaf90429a417a7b69437104092db1a.setContent(html_5ce8932498a992f6ba3c01c8779c1966);
+                var html_73ce3257cfd0317931c789c7604d7214 = $(`<div id="html_73ce3257cfd0317931c789c7604d7214" style="width: 100.0%; height: 100.0%;"><b>Einbruch</b><br>Ort: Räume<br>Datum: 2025-05-08<br><a href='https://www.presseportal.de/blaulicht/pm/117697/6029624' target='_blank'>Quelle</a></div>`)[0];
+                popup_c1c74c0252db6722420adbaacab8aeaf.setContent(html_73ce3257cfd0317931c789c7604d7214);
             
         
 
-        circle_marker_e880c5032506983c1562edc0245f9b8d.bindPopup(popup_5beaf90429a417a7b69437104092db1a)
+        circle_marker_bf77910bc4f8b1a0d740f64d92b31723.bindPopup(popup_c1c74c0252db6722420adbaacab8aeaf)
         ;
 
         
     
     
-            var circle_marker_66eb4186e66de6a95deba3f6570bab55 = L.circleMarker(
-                [50.5845091, 10.6148369],
+            var circle_marker_d4345dc29ee3d938f42ccbb2daa4ca16 = L.circleMarker(
+                [50.4655067, 8.2018751],
                 {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_2ddbfd32aec51fa841828df77d57b4a6);
+            ).addTo(map_2303f2e4385c0b08c9a037fac63b9408);
         
     
-        var popup_7dd9a6edadab83deaf235165c68e4ad6 = L.popup({
+        var popup_8a2f073ae30af420a2c8d5094bd4b00e = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_3bb0af48041469d218206c48ec91642b = $(`<div id="html_3bb0af48041469d218206c48ec91642b" style="width: 100.0%; height: 100.0%;"><b>Verkehrsunfall</b><br>Ort: Auberg<br>Datum: 2025-05-08<br><a href='https://www.presseportal.de/blaulicht/pm/50153/6029622' target='_blank'>Quelle</a></div>`)[0];
-                popup_7dd9a6edadab83deaf235165c68e4ad6.setContent(html_3bb0af48041469d218206c48ec91642b);
+                var html_0492fe3888f5221b515e724d816f95e7 = $(`<div id="html_0492fe3888f5221b515e724d816f95e7" style="width: 100.0%; height: 100.0%;"><b>Verkehrsunfall</b><br>Ort: Gaudernbach<br>Datum: 2025-05-08<br><a href='https://www.presseportal.de/blaulicht/pm/50153/6029622' target='_blank'>Quelle</a></div>`)[0];
+                popup_8a2f073ae30af420a2c8d5094bd4b00e.setContent(html_0492fe3888f5221b515e724d816f95e7);
             
         
 
-        circle_marker_66eb4186e66de6a95deba3f6570bab55.bindPopup(popup_7dd9a6edadab83deaf235165c68e4ad6)
+        circle_marker_d4345dc29ee3d938f42ccbb2daa4ca16.bindPopup(popup_8a2f073ae30af420a2c8d5094bd4b00e)
         ;
 
         
     
     
-            var circle_marker_e47c81543e920f64c720be8dce08d944 = L.circleMarker(
-                [52.5985728, 13.4532513],
+            var circle_marker_d357e9a8b0c549396cbd2389eaf043ab = L.circleMarker(
+                [48.7972825, 8.1118983],
                 {"bubblingMouseEvents": true, "color": "violet", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "violet", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_2ddbfd32aec51fa841828df77d57b4a6);
+            ).addTo(map_2303f2e4385c0b08c9a037fac63b9408);
         
     
-        var popup_c5e6d33973d9aef3ac8b29aeddb252a5 = L.popup({
+        var popup_34ef822ea5b4451ac46394b50dca1b9e = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_cc83572a600e3faa4e35fc9dfad94d76 = $(`<div id="html_cc83572a600e3faa4e35fc9dfad94d76" style="width: 100.0%; height: 100.0%;"><b>Sexualdelikt</b><br>Ort: Schwarzwaldstraße<br>Datum: 2025-05-08<br><a href='https://www.presseportal.de/blaulicht/pm/110975/6029621' target='_blank'>Quelle</a></div>`)[0];
-                popup_c5e6d33973d9aef3ac8b29aeddb252a5.setContent(html_cc83572a600e3faa4e35fc9dfad94d76);
+                var html_5c3c9a50d8b4536da7b9e89efff3d156 = $(`<div id="html_5c3c9a50d8b4536da7b9e89efff3d156" style="width: 100.0%; height: 100.0%;"><b>Sexualdelikt</b><br>Ort: Hügelsheim<br>Datum: 2025-05-08<br><a href='https://www.presseportal.de/blaulicht/pm/110975/6029621' target='_blank'>Quelle</a></div>`)[0];
+                popup_34ef822ea5b4451ac46394b50dca1b9e.setContent(html_5c3c9a50d8b4536da7b9e89efff3d156);
             
         
 
-        circle_marker_e47c81543e920f64c720be8dce08d944.bindPopup(popup_c5e6d33973d9aef3ac8b29aeddb252a5)
-        ;
-
-        
-    
-    
-            var circle_marker_76bf08f15376cfe31aa9cd6bdd2dcbf1 = L.circleMarker(
-                [50.9440506, 8.2856424],
-                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_2ddbfd32aec51fa841828df77d57b4a6);
-        
-    
-        var popup_9181541a109c8b508ebb1eafc5e28ab9 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_4e8e784d9643350760708564cf65429f = $(`<div id="html_4e8e784d9643350760708564cf65429f" style="width: 100.0%; height: 100.0%;"><b>Verkehrsunfall</b><br>Ort: Weide<br>Datum: 2025-05-08<br><a href='https://www.presseportal.de/blaulicht/pm/65850/6029617' target='_blank'>Quelle</a></div>`)[0];
-                popup_9181541a109c8b508ebb1eafc5e28ab9.setContent(html_4e8e784d9643350760708564cf65429f);
-            
-        
-
-        circle_marker_76bf08f15376cfe31aa9cd6bdd2dcbf1.bindPopup(popup_9181541a109c8b508ebb1eafc5e28ab9)
-        ;
-
-        
-    
-    
-            var circle_marker_5a8a0ea5d306e7f172fd4e3958fae6d9 = L.circleMarker(
-                [52.5212, 13.3743484],
-                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
-            ).addTo(map_2ddbfd32aec51fa841828df77d57b4a6);
-        
-    
-        var popup_13d9ad562027f4f7eebac2f00d24caca = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_75c667dfb0626169554e4356bcf2b744 = $(`<div id="html_75c667dfb0626169554e4356bcf2b744" style="width: 100.0%; height: 100.0%;"><b>Einbruch</b><br>Ort: Konrad-Adenauer-Straße<br>Datum: 2025-05-08<br><a href='https://www.presseportal.de/blaulicht/pm/43526/6029615' target='_blank'>Quelle</a></div>`)[0];
-                popup_13d9ad562027f4f7eebac2f00d24caca.setContent(html_75c667dfb0626169554e4356bcf2b744);
-            
-        
-
-        circle_marker_5a8a0ea5d306e7f172fd4e3958fae6d9.bindPopup(popup_13d9ad562027f4f7eebac2f00d24caca)
+        circle_marker_d357e9a8b0c549396cbd2389eaf043ab.bindPopup(popup_34ef822ea5b4451ac46394b50dca1b9e)
         ;
 
         
