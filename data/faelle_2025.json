@@ -1,47 +1,25 @@
 {
-  "last_updated": "2025-05-08T08:45:59Z",
+  "last_updated": "2025-05-08T08:53:09Z",
   "faelle": [
     {
+      "delikt": "Einbruch",
+      "ort": "Daimlerstraße",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/110979/6029023",
+      "koordinaten": [
+        52.4237306,
+        13.3807711
+      ],
+      "farbe": "brown"
+    },
+    {
       "delikt": "Verkehrsunfall",
-      "ort": "Hotelparkplatz",
+      "ort": "Straße",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/59458/6028999",
       "koordinaten": [
-        52.1328092,
-        11.6102271
-      ],
-      "farbe": "lightblue"
-    },
-    {
-      "delikt": "Verkehrsunfall",
-      "ort": "KN",
-      "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/110973/6028985",
-      "koordinaten": [
-        50.7747551,
-        6.0839856
-      ],
-      "farbe": "lightblue"
-    },
-    {
-      "delikt": "Verkehrsunfall",
-      "ort": "Recklinghausen",
-      "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/42900/6028982",
-      "koordinaten": [
-        51.6143815,
-        7.1978546
-      ],
-      "farbe": "lightblue"
-    },
-    {
-      "delikt": "Verkehrsunfall",
-      "ort": "Anschlussstelle",
-      "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/110975/6028976",
-      "koordinaten": [
-        50.5977303,
-        8.8023723
+        50.8705357,
+        7.4943548
       ],
       "farbe": "lightblue"
     }
