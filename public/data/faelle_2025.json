@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-08T19:24:56Z",
+  "last_updated": "2025-05-08T19:30:08Z",
   "faelle": [
     {
       "delikt": "Verkehrsunfall",
@@ -14,23 +14,23 @@
     },
     {
       "delikt": "Einbruch",
-      "ort": "Lauerswiese",
+      "ort": "Mehrfamilienhaus",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/138534/6029757",
       "koordinaten": [
-        49.2889558,
-        7.1232879
+        54.3024348,
+        10.8553124
       ],
       "farbe": "brown"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Apelern",
+      "ort": "Hauptstraße",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/57922/6029754",
       "koordinaten": [
-        52.289378,
-        9.3343159
+        52.2730722,
+        9.3810122
       ],
       "farbe": "lightblue"
     },
@@ -47,12 +47,12 @@
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Wächtersbach",
+      "ort": "Gelände",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/43561/6029750",
       "koordinaten": [
-        50.2724,
-        9.2857
+        52.5070127,
+        13.4543002
       ],
       "farbe": "lightblue"
     },
