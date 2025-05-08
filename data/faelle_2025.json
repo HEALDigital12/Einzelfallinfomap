@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-08T19:07:14Z",
+  "last_updated": "2025-05-08T19:13:06Z",
   "faelle": [
     {
       "delikt": "Verkehrsunfall",
@@ -14,18 +14,18 @@
     },
     {
       "delikt": "Einbruch",
-      "ort": "Mehrfamilienhaus",
+      "ort": "St. Ingbert",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/138534/6029757",
       "koordinaten": [
-        54.3024348,
-        10.8553124
+        49.2788378,
+        7.1156707
       ],
       "farbe": "brown"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Samtgemeinde Rodenberg",
+      "ort": "Hauptstraße",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/57922/6029754",
       "koordinaten": [
@@ -36,12 +36,12 @@
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Bensheim",
+      "ort": "Autobahn 5",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/4969/6029752",
       "koordinaten": [
-        49.6977,
-        8.6288
+        52.3931089,
+        12.8358676
       ],
       "farbe": "lightblue"
     },
