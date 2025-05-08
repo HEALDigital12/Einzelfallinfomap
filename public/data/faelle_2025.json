@@ -1,49 +1,38 @@
 {
-  "last_updated": "2025-05-08T14:22:00Z",
+  "last_updated": "2025-05-08T14:28:58Z",
   "faelle": [
     {
-      "delikt": "Körperverletzung",
-      "ort": "Aurich",
+      "delikt": "Einbruch",
+      "ort": "Unterdorf Straße",
       "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/104233/6029630",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/126723/6029673",
       "koordinaten": [
-        53.5122853,
-        7.3915284
+        51.4580514,
+        6.9802941
       ],
-      "farbe": "orange"
+      "farbe": "brown"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Parkplatz",
+      "ort": "Altheimer Straße",
       "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/65857/6029627",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/178881/6029672",
       "koordinaten": [
-        51.2538093,
-        6.3510931
+        48.3285469,
+        9.9687467
       ],
       "farbe": "lightblue"
     },
     {
-      "delikt": "Einbruch",
-      "ort": "Haus",
+      "delikt": "Verkehrsunfall",
+      "ort": "Straße",
       "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/65857/6029626",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/126723/6029671",
       "koordinaten": [
-        47.5921008,
-        9.8594395
+        50.8705357,
+        7.4943548
       ],
-      "farbe": "brown"
-    },
-    {
-      "delikt": "Einbruch",
-      "ort": "Räume",
-      "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/117697/6029624",
-      "koordinaten": [
-        54.2468815,
-        10.050201
-      ],
-      "farbe": "brown"
+      "farbe": "lightblue"
     }
   ]
 }
