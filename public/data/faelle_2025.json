@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-08T18:49:36Z",
+  "last_updated": "2025-05-08T18:55:08Z",
   "faelle": [
     {
       "delikt": "Verkehrsunfall",
@@ -14,18 +14,18 @@
     },
     {
       "delikt": "Einbruch",
-      "ort": "Mehrfamilienhaus",
+      "ort": "St. Ingbert",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/138534/6029757",
       "koordinaten": [
-        54.3024348,
-        10.8553124
+        49.2788378,
+        7.1156707
       ],
       "farbe": "brown"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Hauptstraße",
+      "ort": "Samtgemeinde Rodenberg",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/57922/6029754",
       "koordinaten": [
@@ -47,12 +47,12 @@
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Wächtersbach",
+      "ort": "Industriestraße",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/43561/6029750",
       "koordinaten": [
-        50.2724,
-        9.2857
+        52.1756463,
+        7.6260675
       ],
       "farbe": "lightblue"
     },
