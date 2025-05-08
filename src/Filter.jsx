@@ -9,9 +9,9 @@ function Filter({ selectedTypes, onChange }) {
   ];
 
   const handleCheckboxChange = (value) => {
-    if (Array.isArray(selectedTypes) && selectedTypes.includes(value)) {
+    if (selectedTypes.includes(value)) {
       onChange(selectedTypes.filter(type => type !== value));
-    } else if (Array.isArray(selectedTypes)) {
+    } else {
       onChange([...selectedTypes, value]);
     }
   };
@@ -34,7 +34,7 @@ function Filter({ selectedTypes, onChange }) {
           <label>
             <input
               type="checkbox"
-              checked={Array.isArray(selectedTypes) && selectedTypes.includes(type.value)}
+              checked={selectedTypes.includes(type.value)}
               onChange={() => handleCheckboxChange(type.value)}
               style={{ marginRight: '6px' }}
             />
