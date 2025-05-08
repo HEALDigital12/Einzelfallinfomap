@@ -5,7 +5,7 @@ function LastUpdate() {
   const [lastUpdate, setLastUpdate] = useState(null);
 
   useEffect(() => {
-    fetch('/data/faelle_2025.json')
+    fetch('/public/data/faelle_2025.json')
       .then(res => res.json())
       .then(data => {
         const date = new Date(data.last_updated);
