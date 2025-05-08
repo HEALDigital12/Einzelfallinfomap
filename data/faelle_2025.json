@@ -1,27 +1,82 @@
 {
-  "last_updated": "2025-05-08T08:53:09Z",
+  "last_updated": "2025-05-08T14:09:33Z",
   "faelle": [
     {
-      "delikt": "Einbruch",
-      "ort": "Daimlerstraße",
+      "delikt": "Verkehrsunfall",
+      "ort": "Lobberich",
       "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/110979/6029023",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65857/6029627",
       "koordinaten": [
-        52.4237306,
-        13.3807711
+        51.3061888,
+        6.2763247
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Tönisvorst-Vorst",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65857/6029626",
+      "koordinaten": [
+        51.3045584,
+        6.4281495
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Wohnhaus",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117697/6029624",
+      "koordinaten": [
+        52.40142,
+        9.8023679
       ],
       "farbe": "brown"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Straße",
+      "ort": "Auberg",
       "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/59458/6028999",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/50153/6029622",
       "koordinaten": [
-        50.8705357,
-        7.4943548
+        50.5845091,
+        10.6148369
       ],
       "farbe": "lightblue"
+    },
+    {
+      "delikt": "Sexualdelikt",
+      "ort": "Schwarzwaldstraße",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/110975/6029621",
+      "koordinaten": [
+        52.5985728,
+        13.4532513
+      ],
+      "farbe": "violet"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Weide",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65850/6029617",
+      "koordinaten": [
+        50.9440506,
+        8.2856424
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Konrad-Adenauer-Straße",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/43526/6029615",
+      "koordinaten": [
+        52.5212,
+        13.3743484
+      ],
+      "farbe": "brown"
     }
   ]
 }
