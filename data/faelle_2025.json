@@ -1,38 +1,71 @@
 {
-  "last_updated": "2025-05-08T14:34:16Z",
+  "last_updated": "2025-05-08T18:49:36Z",
   "faelle": [
     {
-      "delikt": "Einbruch",
-      "ort": "Büro",
+      "delikt": "Verkehrsunfall",
+      "ort": "Kirchstraße",
       "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/126723/6029673",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65843/6029759",
       "koordinaten": [
-        51.880329,
-        12.4043843
+        51.2029228,
+        7.3571392
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Mehrfamilienhaus",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/138534/6029757",
+      "koordinaten": [
+        54.3024348,
+        10.8553124
       ],
       "farbe": "brown"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Altheimer Straße",
+      "ort": "Hauptstraße",
       "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/178881/6029672",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/57922/6029754",
       "koordinaten": [
-        48.3285469,
-        9.9687467
+        52.2730722,
+        9.3810122
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Straße",
+      "ort": "Autobahn 5",
       "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/126723/6029671",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/4969/6029752",
       "koordinaten": [
-        50.8705357,
-        7.4943548
+        52.3931089,
+        12.8358676
       ],
       "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Wächtersbach",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/43561/6029750",
+      "koordinaten": [
+        50.2724,
+        9.2857
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Tötung",
+      "ort": "Dortmund",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/4971/6029748",
+      "koordinaten": [
+        51.5142273,
+        7.4652789
+      ],
+      "farbe": "red"
     }
   ]
 }
