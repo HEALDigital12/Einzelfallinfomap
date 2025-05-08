@@ -1,14 +1,14 @@
 {
-  "last_updated": "2025-05-08T14:28:58Z",
+  "last_updated": "2025-05-08T14:34:16Z",
   "faelle": [
     {
       "delikt": "Einbruch",
-      "ort": "Unterdorf Straße",
+      "ort": "Büro",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/126723/6029673",
       "koordinaten": [
-        51.4580514,
-        6.9802941
+        51.880329,
+        12.4043843
       ],
       "farbe": "brown"
     },
