@@ -9,22 +9,32 @@ function Filter({ selectedTypes, onChange }) {
   ];
 
   const handleCheckboxChange = (value) => {
-    if (selectedTypes.includes(value)) {
+    if (Array.isArray(selectedTypes) && selectedTypes.includes(value)) {
       onChange(selectedTypes.filter(type => type !== value));
-    } else {
+    } else if (Array.isArray(selectedTypes)) {
       onChange([...selectedTypes, value]);
     }
   };
 
   return (
-    <div style={{ /* ... (deine Styles) ... */ }}>
+    <div style={{
+      position: 'absolute',
+      top: '20px',
+      left: '20px',
+      backgroundColor: '#222',
+      color: 'white',
+      padding: '10px',
+      borderRadius: '8px',
+      fontSize: '14px',
+      zIndex: 1000
+    }}>
       <strong>Filter</strong>
       {types.map((type, idx) => (
         <div key={idx}>
           <label>
             <input
               type="checkbox"
-              checked={selectedTypes.includes(type.value)}
+              checked={Array.isArray(selectedTypes) && selectedTypes.includes(type.value)}
               onChange={() => handleCheckboxChange(type.value)}
               style={{ marginRight: '6px' }}
             />
