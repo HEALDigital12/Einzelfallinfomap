@@ -1,36 +1,36 @@
 {
-  "last_updated": "2025-05-08T14:15:29Z",
+  "last_updated": "2025-05-08T14:22:00Z",
   "faelle": [
     {
       "delikt": "Körperverletzung",
-      "ort": "Wittmund",
+      "ort": "Aurich",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/104233/6029630",
       "koordinaten": [
-        53.5364786,
-        7.7462334
+        53.5122853,
+        7.3915284
       ],
       "farbe": "orange"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Lobberich",
+      "ort": "Parkplatz",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/65857/6029627",
       "koordinaten": [
-        51.3061888,
-        6.2763247
+        51.2538093,
+        6.3510931
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Einbruch",
-      "ort": "Tönisvorst-Vorst",
+      "ort": "Haus",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/65857/6029626",
       "koordinaten": [
-        51.3045584,
-        6.4281495
+        47.5921008,
+        9.8594395
       ],
       "farbe": "brown"
     },
@@ -44,28 +44,6 @@
         10.050201
       ],
       "farbe": "brown"
-    },
-    {
-      "delikt": "Verkehrsunfall",
-      "ort": "Gaudernbach",
-      "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/50153/6029622",
-      "koordinaten": [
-        50.4655067,
-        8.2018751
-      ],
-      "farbe": "lightblue"
-    },
-    {
-      "delikt": "Sexualdelikt",
-      "ort": "Hügelsheim",
-      "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/110975/6029621",
-      "koordinaten": [
-        48.7972825,
-        8.1118983
-      ],
-      "farbe": "violet"
     }
   ]
 }
