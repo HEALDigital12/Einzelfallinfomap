@@ -39,7 +39,9 @@ function CrimeMap({ selectedTypes, selectedYear }) {
 
           // Neue Marker hinzufügen
           newData.faelle.forEach(fall => {
-            const jahr = new Date(fall.datum).getFullYear();
+            const datumTeile = fall.datum.split('-');
+            const jahr = parseInt(datumTeile[0], 10); // Extrahiere das Jahr direkt
+
             if (jahr === selectedYear && selectedTypes.includes(fall.delikt)) {
               const marker = L.circleMarker(fall.koordinaten, {
                 radius: 8,
