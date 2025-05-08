@@ -1,9 +1,9 @@
 {
-  "last_updated": "2025-05-08T19:58:17Z",
+  "last_updated": "2025-05-08T20:03:47Z",
   "faelle": [
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Radevormwald",
+      "ort": "Kirchstraße",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/65843/6029759",
       "koordinaten": [
@@ -14,18 +14,18 @@
     },
     {
       "delikt": "Einbruch",
-      "ort": "Mehrfamilienhaus",
+      "ort": "Pirminiusstraße",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/138534/6029757",
       "koordinaten": [
-        54.3024348,
-        10.8553124
+        49.1980105,
+        7.6026989
       ],
       "farbe": "brown"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Hauptstraße",
+      "ort": "Apelern",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/57922/6029754",
       "koordinaten": [
@@ -36,12 +36,12 @@
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Autobahn 5",
+      "ort": "Bensheim",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/4969/6029752",
       "koordinaten": [
-        52.3931089,
-        12.8358676
+        49.6977,
+        8.6288
       ],
       "farbe": "lightblue"
     },
