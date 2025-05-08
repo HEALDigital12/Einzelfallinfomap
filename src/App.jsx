@@ -7,10 +7,9 @@ import LastUpdate from './LastUpdate';
 
 function App() {
   const [selectedTypes, setSelectedTypes] = useState([
-    'Tötungsdelikt',
-    'Messerstecherei',
-    'Raubüberfall',
-    'Vergewaltigung'
+    'Verkehrsunfall',
+    'Einbruch'
+    // Füge hier weitere Delikttypen hinzu, die in deiner JSON vorkommen.
   ]);
   const [selectedYear, setSelectedYear] = useState(2025);
 
