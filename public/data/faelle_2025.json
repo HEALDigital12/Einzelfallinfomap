@@ -1,9 +1,9 @@
 {
-  "last_updated": "2025-05-08T19:55:17Z",
+  "last_updated": "2025-05-08T19:58:17Z",
   "faelle": [
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Kirchstraße",
+      "ort": "Radevormwald",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/65843/6029759",
       "koordinaten": [
@@ -14,18 +14,18 @@
     },
     {
       "delikt": "Einbruch",
-      "ort": "Lauerswiese",
+      "ort": "Mehrfamilienhaus",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/138534/6029757",
       "koordinaten": [
-        49.2889558,
-        7.1232879
+        54.3024348,
+        10.8553124
       ],
       "farbe": "brown"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Apelern",
+      "ort": "Hauptstraße",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/57922/6029754",
       "koordinaten": [
@@ -47,12 +47,12 @@
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Industriestraße",
+      "ort": "Wächtersbach",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/43561/6029750",
       "koordinaten": [
-        52.1756463,
-        7.6260675
+        50.2724,
+        9.2857
       ],
       "farbe": "lightblue"
     },
