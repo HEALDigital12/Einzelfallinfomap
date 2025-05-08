@@ -75,75 +75,7 @@ def geokodiere(ort):
         logging.error(f"Fehler beim Decodieren der Geokodierungsantwort für '{ort}': {e}")
     except Exception as e:
         logging.error(f"Unerwarteter Fehler beim Geokodieren von '{ort}': {e}")
-    return [0.0, 0.0]
-
-def scrape_presseportal():
-    ergebnisse = []
-    seite = 1
-
-    while len(ergebnisse) < MAX_FAELLE:
-        url = f"https://www.presseportal.de/blaulicht/nr/alle/seite/{seite}"
-        try:
-            response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=10)
-            response.raise_for_status()
-            soup = BeautifulSoup(response.text, "html.parser")
-            beitraege = soup.select(".news")
-
-            if not beitraege:
-                logging.info(f"Keine weiteren Beiträge auf Seite {seite}.")
-                break
-
-            for eintrag in beitraege:
-                datum_raw = eintrag.select_one(".news-date")
-                titel_raw = eintrag.select_one(".news-title")
-                link_raw = eintrag.select_one("a")
-
-                if not (datum_raw and titel_raw and link_raw):
-                    continue
-
-                datum_str = datum_raw.text.strip()
-                titel = titel_raw.text.strip()
-                link = "https://www.presseportal.de" + link_raw["href"]
-
-                try:
-                    beitrags_datum = datetime.strptime(datum_str, '%d.%m.%Y').date()
-                    if beitrags_datum < HEUTE - timedelta(days=1) or beitrags_datum > HEUTE:
-                        continue
-                except ValueError:
-                    logging.warning(f"Konnte Datum '{datum_str}' nicht parsen.")
-                    continue
-
-                delikt, farbe = get_delikt_und_farbe(titel)
-                if delikt != "Sonstiges":
-                    orte = finde_orte_nlp(titel)
-                    ort = orte[0] if orte else None
-
-                    if ort:
-                        koords = geokodiere(ort)
-                        ergebnisse.append({
-                            "delikt": delikt,
-                            "ort": ort,
-                            "datum": beitrags_datum.strftime("%Y-%m-%d"),
-                            "quelle": link,
-                            "koordinaten": koords,
-                            "farbe": farbe
-                        })
-
-                if len(ergebnisse) >= MAX_FAELLE:
-                    break
-
-                time.sleep(1)
-
-        except requests.exceptions.RequestException as e:
-            logging.error(f"Fehler beim Abrufen von Seite {seite}: {e}")
-            break
-        except Exception as e:
-            logging.error(f"Unerwarteter Fehler auf Seite {seite}: {e}")
-            break
-
-        seite += 1
-
-    return ergebnisse
+    return None # Gebe None zurück, wenn die Geokodierung fehlschlägt
 
 def scrape_rss_feeds(rss_urls):
     ergebnisse = []
@@ -154,34 +86,44 @@ def scrape_rss_feeds(rss_urls):
             feed = feedparser.parse(url)
             for entry in feed.entries:
                 titel = entry.title
-                logging.info(f"  Titel des Eintrags: {titel}")  # Zeige den Titel
+                logging.info(f"  Titel des Eintrags: {titel}")
                 delikt, farbe = get_delikt_und_farbe(titel)
-                logging.info(f"  Erkanntes Delikt: {delikt}")  # Zeige das erkannte Delikt
+                logging.info(f"  Erkanntes Delikt: {delikt}")
                 if delikt != "Sonstiges":
                     orte_titel = finde_orte_nlp(titel)
                     orte_beschreibung = finde_orte_nlp(getattr(entry, 'description', ''))
-                    orte = list(set(orte_titel + orte_beschreibung)) # Kombiniere und entferne Duplikate
-                    logging.info(f"  Gefundene Orte (Titel): {orte_titel}") # Zeige Orte aus dem Titel
-                    logging.info(f"  Gefundene Orte (Beschreibung): {orte_beschreibung}") # Zeige Orte aus der Beschreibung
-                    ort = orte[0] if orte else None
+                    orte = list(set(orte_titel + orte_beschreibung))
+                    logging.info(f"  Gefundene Orte (Titel): {orte_titel}")
+                    logging.info(f"  Gefundene Orte (Beschreibung): {orte_beschreibung}")
 
                     datum_obj = getattr(entry, 'published_parsed', getattr(entry, 'updated_parsed', None))
-                    link = entry.link # Stelle sicher, dass 'link' hier verfügbar ist
+                    link = entry.link
 
                     if datum_obj:
                         beitrags_datum = datetime(*datum_obj[:3]).date()
-                        if beitrags_datum < HEUTE - timedelta(days=2) or beitrags_datum > HEUTE:
+                        # Überdenke die Datumsfilterung - jetzt etwas großzügiger
+                        if beitrags_datum < HEUTE - timedelta(days=3) or beitrags_datum > HEUTE + timedelta(days=1):
                             continue
-                        if ort:
-                            koords = geokodiere(ort)
+
+                        # Versuche, den ersten gefundenen Ort zu geokodieren
+                        koords = None
+                        if orte:
+                            for ort in orte:
+                                koords = geokodiere(ort)
+                                if koords:
+                                    break # Nimm den ersten erfolgreich geokodierten Ort
+
+                        if koords:
                             ergebnisse.append({
                                 "delikt": delikt,
-                                "ort": ort,
+                                "ort": orte[0] if orte else None, # Speichere den ersten gefundenen Ort
                                 "datum": beitrags_datum.strftime("%Y-%m-%d"),
                                 "quelle": link,
                                 "koordinaten": koords,
                                 "farbe": farbe
                             })
+                        else:
+                            logging.warning(f"Konnte keinen Ort für Eintrag '{titel}' geokodieren.")
                     else:
                         logging.warning(f"Konnte Datum für Eintrag '{titel}' nicht parsen.")
 
@@ -192,7 +134,6 @@ def scrape_rss_feeds(rss_urls):
 
 def main():
     logging.info("+++ main() gestartet +++")
-    # presseportal_faelle = scrape_presseportal()
     rss_feed_faelle = scrape_rss_feeds(RSS_FEED_URLS)
     logging.info(f"Anzahl der extrahierten Fälle: {len(rss_feed_faelle)}")
     alle_faelle = rss_feed_faelle
@@ -210,7 +151,6 @@ def main():
         json.dump(daten, f, ensure_ascii=False, indent=2)
 
     logging.info(f"Daten erfolgreich geschrieben nach: {ERGEBNIS_DATEI}")
-
 
 if __name__ == "__main__":
     main()
