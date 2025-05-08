@@ -1,4 +1,49 @@
 {
-  "last_updated": "2025-05-04T20:24:08Z",
-  "faelle": []
+  "last_updated": "2025-05-08T08:45:59Z",
+  "faelle": [
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Hotelparkplatz",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/59458/6028999",
+      "koordinaten": [
+        52.1328092,
+        11.6102271
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "KN",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/110973/6028985",
+      "koordinaten": [
+        50.7747551,
+        6.0839856
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Recklinghausen",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/42900/6028982",
+      "koordinaten": [
+        51.6143815,
+        7.1978546
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Anschlussstelle",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/110975/6028976",
+      "koordinaten": [
+        50.5977303,
+        8.8023723
+      ],
+      "farbe": "lightblue"
+    }
+  ]
 }
