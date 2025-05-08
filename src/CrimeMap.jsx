@@ -24,7 +24,7 @@ function CrimeMap({ selectedTypes, selectedYear }) {
     };
   }, []);
 
-  // Daten laden und Marker aktualisieren
+  // Daten laden und Marker aktualisieren (Filterung deaktiviert)
   useEffect(() => {
     if (!mapRef.current) return;
 
@@ -37,22 +37,17 @@ function CrimeMap({ selectedTypes, selectedYear }) {
           // Bestehende Marker entfernen
           markerLayerRef.current.clearLayers();
 
-          // Neue Marker hinzufügen
+          // Alle neuen Marker hinzufügen (Filterung ignoriert)
           newData.faelle.forEach(fall => {
-            const datumTeile = fall.datum.split('-');
-            const jahr = parseInt(datumTeile[0], 10);
-
-            if (jahr === selectedYear && selectedTypes.includes(fall.delikt)) {
-              const marker = L.circleMarker(fall.koordinaten, {
-                radius: 8,
-                color: fall.farbe,
-                fillColor: fall.farbe,
-                fillOpacity: 0.9
-              }).bindPopup(
-                `<strong>${fall.delikt}</strong><br>${fall.ort}<br>${fall.datum}<br><a href="${fall.quelle}" target="_blank">Zur Quelle</a>`
-              );
-              markerLayerRef.current.addLayer(marker);
-            }
+            const marker = L.circleMarker(fall.koordinaten, {
+              radius: 8,
+              color: fall.farbe,
+              fillColor: fall.farbe,
+              fillOpacity: 0.9
+            }).bindPopup(
+              `<strong>${fall.delikt}</strong><br>${fall.ort}<br>${fall.datum}<br><a href="${fall.quelle}" target="_blank">Zur Quelle</a>`
+            );
+            markerLayerRef.current.addLayer(marker);
           });
         })
         .catch(err => console.error('Fehler beim Laden der Daten:', err));
@@ -62,7 +57,7 @@ function CrimeMap({ selectedTypes, selectedYear }) {
     const intervalId = setInterval(fetchDataAndRender, 5 * 60 * 1000); // 5 Minuten
 
     return () => clearInterval(intervalId);
-  }, [selectedTypes, selectedYear]);
+  }, []); // Abhängigkeitsarray ist jetzt leer
 
   return <div id="map" style={{ height: '100vh', width: '100%' }}></div>;
 }
