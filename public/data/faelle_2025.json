@@ -1,9 +1,9 @@
 {
-  "last_updated": "2025-05-08T19:13:06Z",
+  "last_updated": "2025-05-08T19:20:04Z",
   "faelle": [
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Radevormwald",
+      "ort": "Kirchstraße",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/65843/6029759",
       "koordinaten": [
@@ -14,12 +14,12 @@
     },
     {
       "delikt": "Einbruch",
-      "ort": "St. Ingbert",
+      "ort": "Straße",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/138534/6029757",
       "koordinaten": [
-        49.2788378,
-        7.1156707
+        50.8705357,
+        7.4943548
       ],
       "farbe": "brown"
     },
@@ -29,8 +29,8 @@
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/57922/6029754",
       "koordinaten": [
-        52.2730722,
-        9.3810122
+        52.289378,
+        9.3343159
       ],
       "farbe": "lightblue"
     },
