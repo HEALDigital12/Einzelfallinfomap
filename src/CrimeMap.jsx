@@ -29,7 +29,7 @@ function CrimeMap({ selectedTypes, selectedYear }) {
     if (!mapRef.current) return;
 
     const fetchDataAndRender = () => {
-      fetch('/data/faelle_2025.json')
+      fetch('/public/data/faelle_2025.json')
         .then(res => res.json())
         .then(newData => {
           setData(newData);
