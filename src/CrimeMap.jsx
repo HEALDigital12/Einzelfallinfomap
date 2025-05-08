@@ -45,7 +45,7 @@ function CrimeMap({ selectedTypes, selectedYear }) {
             console.log("Aktuelles Fall-Delikt:", fall.delikt);
             console.log("selectedTypes:", selectedTypes);
 
-            if (jahr === selectedYear && selectedTypes.includes(fall.delikt)) {
+            if (jahr === selectedYear && Array.isArray(selectedTypes) && selectedTypes.includes(fall.delikt)) {
               const marker = L.circleMarker(fall.koordinaten, {
                 radius: 8,
                 color: fall.farbe,
