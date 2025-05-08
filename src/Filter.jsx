@@ -17,17 +17,7 @@ function Filter({ selectedTypes, onChange }) {
   };
 
   return (
-    <div style={{
-      position: 'absolute',
-      top: '20px',
-      left: '20px',
-      backgroundColor: '#222',
-      color: 'white',
-      padding: '10px',
-      borderRadius: '8px',
-      fontSize: '14px',
-      zIndex: 1000
-    }}>
+    <div style={{ /* ... (deine Styles) ... */ }}>
       <strong>Filter</strong>
       {types.map((type, idx) => (
         <div key={idx}>
