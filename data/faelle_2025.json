@@ -1,0 +1,60 @@
+{
+  "last_updated": "2025-05-08T08:40:03Z",
+  "faelle": [
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Straße",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/59458/6028999",
+      "koordinaten": [
+        50.8705357,
+        7.4943548
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Villingen",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/110973/6028985",
+      "koordinaten": [
+        48.0596619,
+        8.4598995
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Recklinghausen",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/42900/6028982",
+      "koordinaten": [
+        51.6143815,
+        7.1978546
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Süden",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/110975/6028976",
+      "koordinaten": [
+        54.4850995,
+        8.852271
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Hude",
+      "datum": "2025-05-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/68438/6028974",
+      "koordinaten": [
+        54.3880564,
+        9.2148137
+      ],
+      "farbe": "lightblue"
+    }
+  ]
+}
