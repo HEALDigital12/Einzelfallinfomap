@@ -1,58 +1,58 @@
 {
-  "last_updated": "2025-05-08T19:30:08Z",
+  "last_updated": "2025-05-08T19:37:44Z",
   "faelle": [
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Radevormwald",
+      "ort": "Kirchstraße",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/65843/6029759",
       "koordinaten": [
-        51.2029228,
-        7.3571392
+        53.9421121,
+        14.0727179
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Einbruch",
-      "ort": "Mehrfamilienhaus",
+      "ort": "St. Ingbert",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/138534/6029757",
       "koordinaten": [
-        54.3024348,
-        10.8553124
+        49.2788378,
+        7.1156707
       ],
       "farbe": "brown"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Hauptstraße",
+      "ort": "Apelern",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/57922/6029754",
       "koordinaten": [
-        52.2730722,
-        9.3810122
+        52.289378,
+        9.3343159
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Autobahn 5",
+      "ort": "Bensheim",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/4969/6029752",
       "koordinaten": [
-        52.3931089,
-        12.8358676
+        49.6977,
+        8.6288
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Gelände",
+      "ort": "Wächtersbach",
       "datum": "2025-05-08",
       "quelle": "https://www.presseportal.de/blaulicht/pm/43561/6029750",
       "koordinaten": [
-        52.5070127,
-        13.4543002
+        50.2724,
+        9.2857
       ],
       "farbe": "lightblue"
     },
