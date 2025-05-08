@@ -42,6 +42,9 @@ function CrimeMap({ selectedTypes, selectedYear }) {
             const datumTeile = fall.datum.split('-');
             const jahr = parseInt(datumTeile[0], 10);
 
+            console.log("Aktuelles Fall-Delikt:", fall.delikt);
+            console.log("selectedTypes:", selectedTypes);
+
             if (jahr === selectedYear && selectedTypes.includes(fall.delikt)) {
               const marker = L.circleMarker(fall.koordinaten, {
                 radius: 8,
