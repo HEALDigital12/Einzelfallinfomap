@@ -1,71 +1,60 @@
 {
-  "last_updated": "2025-05-08T20:09:36Z",
+  "last_updated": "2025-05-09T06:34:15Z",
   "faelle": [
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Radevormwald",
-      "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/65843/6029759",
+      "ort": "Osnabrück",
+      "datum": "2025-05-09",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104236/6029815",
       "koordinaten": [
-        51.2029228,
-        7.3571392
+        52.2719595,
+        8.047635
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Osnabrück",
+      "datum": "2025-05-09",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104236/6029812",
+      "koordinaten": [
+        52.2719595,
+        8.047635
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Einbruch",
-      "ort": "Lauerswiese",
-      "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/138534/6029757",
+      "ort": "Ahlen-Vorhelm",
+      "datum": "2025-05-09",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/52656/6029809",
       "koordinaten": [
-        49.2889558,
-        7.1232879
+        51.8080675,
+        7.9446687
       ],
       "farbe": "brown"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Apelern",
-      "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/57922/6029754",
+      "ort": "Plauenschen Straße Einmündung Mylauer Straße",
+      "datum": "2025-05-09",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/126720/6029808",
       "koordinaten": [
-        52.289378,
-        9.3343159
+        50.7783814,
+        12.0763533
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Autobahn 5",
-      "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/4969/6029752",
+      "ort": "Münster",
+      "datum": "2025-05-09",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/52656/6029802",
       "koordinaten": [
-        52.3931089,
-        12.8358676
+        51.9625101,
+        7.6251879
       ],
       "farbe": "lightblue"
-    },
-    {
-      "delikt": "Verkehrsunfall",
-      "ort": "Gelände",
-      "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/43561/6029750",
-      "koordinaten": [
-        52.5070127,
-        13.4543002
-      ],
-      "farbe": "lightblue"
-    },
-    {
-      "delikt": "Tötung",
-      "ort": "Dortmund",
-      "datum": "2025-05-08",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/4971/6029748",
-      "koordinaten": [
-        51.5142273,
-        7.4652789
-      ],
-      "farbe": "red"
     }
   ]
 }
