@@ -1,58 +1,47 @@
 {
-  "last_updated": "2025-05-09T06:34:15Z",
+  "last_updated": "2025-05-10T06:30:18Z",
   "faelle": [
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Osnabrück",
-      "datum": "2025-05-09",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/104236/6029815",
+      "ort": "Herfa",
+      "datum": "2025-05-10",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/43558/6030684",
       "koordinaten": [
-        52.2719595,
-        8.047635
+        50.8880384,
+        9.9192402
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Osnabrück",
-      "datum": "2025-05-09",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/104236/6029812",
+      "ort": "Ostring",
+      "datum": "2025-05-10",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117696/6030681",
       "koordinaten": [
-        52.2719595,
-        8.047635
-      ],
-      "farbe": "lightblue"
-    },
-    {
-      "delikt": "Einbruch",
-      "ort": "Ahlen-Vorhelm",
-      "datum": "2025-05-09",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/52656/6029809",
-      "koordinaten": [
-        51.8080675,
-        7.9446687
-      ],
-      "farbe": "brown"
-    },
-    {
-      "delikt": "Verkehrsunfall",
-      "ort": "Plauenschen Straße Einmündung Mylauer Straße",
-      "datum": "2025-05-09",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/126720/6029808",
-      "koordinaten": [
-        50.7783814,
-        12.0763533
+        51.6814875,
+        7.825755
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Münster",
-      "datum": "2025-05-09",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/52656/6029802",
+      "ort": "Weihungstraße",
+      "datum": "2025-05-10",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/110979/6030680",
       "koordinaten": [
-        51.9625101,
-        7.6251879
+        48.3614362,
+        9.9831968
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Schnaitheim",
+      "datum": "2025-05-10",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/110979/6030670",
+      "koordinaten": [
+        48.7069037,
+        10.1607494
       ],
       "farbe": "lightblue"
     }
