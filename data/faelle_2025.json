@@ -1,47 +1,80 @@
 {
-  "last_updated": "2025-05-10T06:30:18Z",
+  "last_updated": "2025-05-11T06:31:11Z",
   "faelle": [
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Herfa",
-      "datum": "2025-05-10",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/43558/6030684",
+      "ort": "Schwarzbach",
+      "datum": "2025-05-11",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/126725/6030919",
       "koordinaten": [
-        50.8880384,
-        9.9192402
+        49.263428,
+        7.5673057
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Ostring",
-      "datum": "2025-05-10",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/117696/6030681",
+      "ort": "Kerpen",
+      "datum": "2025-05-11",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/10374/6030918",
       "koordinaten": [
-        51.6814875,
-        7.825755
+        50.3097609,
+        6.7293316
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Weihungstraße",
-      "datum": "2025-05-10",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/110979/6030680",
+      "ort": "Zülpicher Straße",
+      "datum": "2025-05-11",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/8/6030914",
       "koordinaten": [
-        48.3614362,
-        9.9831968
+        50.7812834,
+        6.7687053
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Schnaitheim",
-      "datum": "2025-05-10",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/110979/6030670",
+      "ort": "Hattingen",
+      "datum": "2025-05-11",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/12726/6030913",
       "koordinaten": [
-        48.7069037,
-        10.1607494
+        51.4007175,
+        7.1862486
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Suhl",
+      "datum": "2025-05-11",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/126725/6030911",
+      "koordinaten": [
+        50.6086518,
+        10.6926437
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Kreuzung",
+      "datum": "2025-05-11",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6030908",
+      "koordinaten": [
+        52.2787172,
+        8.9604066
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Ludwigshafen",
+      "datum": "2025-05-11",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117696/6030907",
+      "koordinaten": [
+        49.4704113,
+        8.4381568
       ],
       "farbe": "lightblue"
     }
