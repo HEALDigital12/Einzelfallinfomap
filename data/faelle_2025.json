@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-12T18:32:21Z",
+  "last_updated": "2025-05-12T18:41:13Z",
   "faelle": [
     {
       "delikt": "Verkehrsunfall",
@@ -119,6 +119,83 @@
       "koordinaten": [
         51.5142273,
         7.4652789
+      ],
+      "farbe": "violet"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Bad Marienberg",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117710/6032330",
+      "koordinaten": [
+        50.650076,
+        7.948217
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Zachow",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/108746/6032328",
+      "koordinaten": [
+        52.4833,
+        12.7833
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Wismar",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/108746/6032327",
+      "koordinaten": [
+        53.8909832,
+        11.4647932
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Sinzig",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117711/6032326",
+      "koordinaten": [
+        50.5452042,
+        7.2490828
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Neuwied",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117709/6032325",
+      "koordinaten": [
+        50.4302393,
+        7.466302
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Godendorf",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/108747/6032317",
+      "koordinaten": [
+        53.2578656,
+        13.1537709
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Sexualdelikt",
+      "ort": "Hertha-Hoffmann-Straße",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/115869/6032316",
+      "koordinaten": [
+        51.5090433,
+        7.4795413
       ],
       "farbe": "violet"
     }
