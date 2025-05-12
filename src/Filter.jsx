@@ -2,10 +2,11 @@ import React from 'react';
 
 function Filter({ selectedTypes, onChange }) {
   const types = [
-    { value: 'Verkehrsunfall', label: 'Verkehrsunfall' },
-    { value: 'Einbruch', label: 'Einbruch' },
-    // Füge hier weitere Filter-Optionen hinzu, entsprechend den Delikttypen in deiner JSON-Datei.
-    // Stelle sicher, dass 'value' exakt mit dem Wert in 'fall.delikt' übereinstimmt.
+    { value: 'Tötung', label: 'Tötungsdelikt' },
+    { value: 'Messerstecherei', label: 'Messerstecherei' },
+    { value: 'Raub', label: 'Raub' },
+    { value: 'Sexualdelikt', label: 'Sexualdelikt' }
+    // Füge hier weitere schwere Straftaten hinzu, die du filtern möchtest
   ];
 
   const handleCheckboxChange = (value) => {
