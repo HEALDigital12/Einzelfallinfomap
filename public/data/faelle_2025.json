@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-12T06:35:21Z",
+  "last_updated": "2025-05-12T18:32:21Z",
   "faelle": [
     {
       "delikt": "Verkehrsunfall",
@@ -44,6 +44,83 @@
         12.0832666
       ],
       "farbe": "brown"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Bismarckstraße",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117710/6032330",
+      "koordinaten": [
+        52.5115148,
+        13.3052393
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Ortschaften",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/108746/6032328",
+      "koordinaten": [
+        50.8116748,
+        6.3805337
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Autobahn",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/108746/6032327",
+      "koordinaten": [
+        52.2141153,
+        11.0700018
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Sinzig",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117711/6032326",
+      "koordinaten": [
+        50.5452042,
+        7.2490828
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Kuttis-Dorfladen",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117709/6032325",
+      "koordinaten": [
+        51.2538093,
+        6.3510931
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Verkehrsunfall",
+      "ort": "Neustrelitz",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/108747/6032317",
+      "koordinaten": [
+        53.3617163,
+        13.0630004
+      ],
+      "farbe": "lightblue"
+    },
+    {
+      "delikt": "Sexualdelikt",
+      "ort": "Dortmund",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/115869/6032316",
+      "koordinaten": [
+        51.5142273,
+        7.4652789
+      ],
+      "farbe": "violet"
     }
   ]
 }
