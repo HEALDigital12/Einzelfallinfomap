@@ -2,16 +2,18 @@ import React from 'react';
 
 function Legend() {
   const legendItems = [
-    { color: 'lightblue', label: 'Verkehrsunfall' },
-    { color: 'brown', label: 'Einbruch' },
-    // Füge hier weitere Legenden-Einträge hinzu
+    { color: 'red', label: 'Tötungsdelikt' },
+    { color: 'darkred', label: 'Messerstecherei' },
+    { color: 'yellow', label: 'Raub' },
+    { color: 'violet', label: 'Sexualdelikt' }
+    // Füge hier weitere schwere Straftaten und ihre Farben hinzu
   ];
 
   return (
     <div style={{
       position: 'absolute',
-      bottom: '20px', // Passe diese Werte nach Bedarf an
-      right: '20px',  // Passe diese Werte nach Bedarf an
+      bottom: '20px',
+      right: '20px',
       backgroundColor: '#222',
       color: 'white',
       padding: '10px',
