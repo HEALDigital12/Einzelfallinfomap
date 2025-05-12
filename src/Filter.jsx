@@ -6,7 +6,7 @@ function Filter({ selectedTypes, onChange }) {
     { value: 'Messerstecherei', label: 'Messerstecherei' },
     { value: 'Raub', label: 'Raub' },
     { value: 'Sexualdelikt', label: 'Sexualdelikt' }
-    // Füge hier weitere schwere Straftaten hinzu, die du filtern möchtest
+    // Keine 'Verkehrsunfall'
   ];
 
   const handleCheckboxChange = (value) => {
