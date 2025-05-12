@@ -11,7 +11,7 @@ function App() {
     'Messerstecherei',
     'Raub',
     'Sexualdelikt'
-    // Hier sind die initial ausgewählten schweren Straftaten
+    // Kein 'Verkehrsunfall'
   ]);
   const [selectedYear, setSelectedYear] = useState(2025);
 
