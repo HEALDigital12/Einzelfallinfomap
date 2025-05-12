@@ -23,7 +23,7 @@ SUCHBEGRIFFE_DELIKT = {
     "Messerstecherei": ["messerstecherei", "messerangriff"],
     "Raub": ["raub", "überfall"],
     "Gewalt": ["gewalt"],
-    "Verkehrsunfall": ["unfall", "zusammenstoß", "verletzte"],
+    # "Verkehrsunfall": ["unfall", "zusammenstoß", "verletzte"], #Entfernt
     "Einbruch": ["einbruch", "eingebrochen"]
 }
 
@@ -55,7 +55,7 @@ def get_delikt_und_farbe(titel):
                     "Messerstecherei": "darkred",
                     "Raub": "yellow",
                     "Gewalt": "blue",
-                    "Verkehrsunfall": "lightblue",
+                    # "Verkehrsunfall": "lightblue", #Entfernt
                     "Einbruch": "brown"
                 }
                 return delikt, farbzuordnung.get(delikt, "gray")
@@ -137,6 +137,10 @@ def main():
     rss_feed_faelle = scrape_rss_feeds(RSS_FEED_URLS)
     logging.info(f"Anzahl der extrahierten Fälle: {len(rss_feed_faelle)}")
 
+    # Filtere Verkehrsunfälle heraus
+    rss_feed_faelle = [fall for fall in rss_feed_faelle if fall['delikt'] != 'Verkehrsunfall']
+    logging.info(f"Anzahl der Fälle nach dem Filtern: {len(rss_feed_faelle)}")
+
     try:
         with open(ERGEBNIS_DATEI, 'r', encoding="utf-8") as f:
             vorhandene_daten = json.load(f)
@@ -148,8 +152,10 @@ def main():
         logging.error(f"Fehler beim Decodieren der JSON-Datei '{ERGEBNIS_DATEI}'. Überschreibe sie.")
         alle_faelle = []
 
-    # Füge die neuen Fälle zu den vorhandenen Fällen hinzu
-    alle_faelle.extend(rss_feed_faelle)
+    # Füge die neuen Fälle hinzu, vermeide Duplikate
+    vorhandene_quellen = {fall['quelle'] for fall in alle_faelle}
+    neue_faelle = [fall for fall in rss_feed_faelle if fall['quelle'] not in vorhandene_quellen]
+    alle_faelle.extend(neue_faelle)
 
     daten = {
         "last_updated": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -157,7 +163,7 @@ def main():
     }
 
     logging.info(f"Anzahl der Fälle nach dem Hinzufügen: {len(daten['faelle'])}")
-    logging.info(f"Daten zum Schreiben: {daten.keys()}") # Nur die Schlüssel loggen, um die Datenmenge zu reduzieren
+    logging.info(f"Daten zum Schreiben: {daten.keys()}")  # Nur die Schlüssel loggen, um die Datenmenge zu reduzieren
 
     os.makedirs(os.path.dirname(ERGEBNIS_DATEI), exist_ok=True)
 
