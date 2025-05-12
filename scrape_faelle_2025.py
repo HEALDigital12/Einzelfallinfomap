@@ -136,14 +136,28 @@ def main():
     logging.info("+++ main() gestartet +++")
     rss_feed_faelle = scrape_rss_feeds(RSS_FEED_URLS)
     logging.info(f"Anzahl der extrahierten Fälle: {len(rss_feed_faelle)}")
-    alle_faelle = rss_feed_faelle
+
+    try:
+        with open(ERGEBNIS_DATEI, 'r', encoding="utf-8") as f:
+            vorhandene_daten = json.load(f)
+            alle_faelle = vorhandene_daten.get('faelle', [])
+    except FileNotFoundError:
+        logging.info(f"Datei '{ERGEBNIS_DATEI}' nicht gefunden, erstelle neue.")
+        alle_faelle = []
+    except json.JSONDecodeError:
+        logging.error(f"Fehler beim Decodieren der JSON-Datei '{ERGEBNIS_DATEI}'. Überschreibe sie.")
+        alle_faelle = []
+
+    # Füge die neuen Fälle zu den vorhandenen Fällen hinzu
+    alle_faelle.extend(rss_feed_faelle)
 
     daten = {
         "last_updated": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
         "faelle": alle_faelle
     }
 
-    logging.info(f"Daten zum Schreiben: {daten}")
+    logging.info(f"Anzahl der Fälle nach dem Hinzufügen: {len(daten['faelle'])}")
+    logging.info(f"Daten zum Schreiben: {daten.keys()}") # Nur die Schlüssel loggen, um die Datenmenge zu reduzieren
 
     os.makedirs(os.path.dirname(ERGEBNIS_DATEI), exist_ok=True)
 
