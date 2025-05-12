@@ -1,82 +1,49 @@
 {
-  "last_updated": "2025-05-11T06:31:11Z",
+  "last_updated": "2025-05-12T06:35:21Z",
   "faelle": [
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Schwarzbach",
-      "datum": "2025-05-11",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/126725/6030919",
+      "ort": "Surwold",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6031289",
       "koordinaten": [
-        49.263428,
-        7.5673057
+        52.9861924,
+        7.5086316
       ],
       "farbe": "lightblue"
     },
     {
       "delikt": "Verkehrsunfall",
-      "ort": "Kerpen",
-      "datum": "2025-05-11",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/10374/6030918",
+      "ort": "Gera",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/126720/6031284",
       "koordinaten": [
-        50.3097609,
-        6.7293316
+        50.8765537,
+        12.0832666
       ],
       "farbe": "lightblue"
     },
     {
-      "delikt": "Verkehrsunfall",
-      "ort": "Zülpicher Straße",
-      "datum": "2025-05-11",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/8/6030914",
+      "delikt": "Sexualdelikt",
+      "ort": "Gera",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/126720/6031279",
       "koordinaten": [
-        50.7812834,
-        6.7687053
+        50.8765537,
+        12.0832666
       ],
-      "farbe": "lightblue"
+      "farbe": "violet"
     },
     {
-      "delikt": "Verkehrsunfall",
-      "ort": "Hattingen",
-      "datum": "2025-05-11",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/12726/6030913",
+      "delikt": "Einbruch",
+      "ort": "Gera",
+      "datum": "2025-05-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/126720/6031278",
       "koordinaten": [
-        51.4007175,
-        7.1862486
+        50.8765537,
+        12.0832666
       ],
-      "farbe": "lightblue"
-    },
-    {
-      "delikt": "Verkehrsunfall",
-      "ort": "Suhl",
-      "datum": "2025-05-11",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/126725/6030911",
-      "koordinaten": [
-        50.6086518,
-        10.6926437
-      ],
-      "farbe": "lightblue"
-    },
-    {
-      "delikt": "Verkehrsunfall",
-      "ort": "Kreuzung",
-      "datum": "2025-05-11",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6030908",
-      "koordinaten": [
-        52.2787172,
-        8.9604066
-      ],
-      "farbe": "lightblue"
-    },
-    {
-      "delikt": "Verkehrsunfall",
-      "ort": "Ludwigshafen",
-      "datum": "2025-05-11",
-      "quelle": "https://www.presseportal.de/blaulicht/pm/117696/6030907",
-      "koordinaten": [
-        49.4704113,
-        8.4381568
-      ],
-      "farbe": "lightblue"
+      "farbe": "brown"
     }
   ]
 }
