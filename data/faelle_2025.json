@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-12T19:03:29Z",
+  "last_updated": "2025-05-13T06:34:07Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -55,6 +55,28 @@
         8.1372149
       ],
       "farbe": "red"
+    },
+    {
+      "delikt": "Raub",
+      "ort": "Kantpark",
+      "datum": "2025-05-13",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/50510/6032417",
+      "koordinaten": [
+        51.4298985,
+        6.7692662
+      ],
+      "farbe": "yellow"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Oldenburg",
+      "datum": "2025-05-13",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/68440/6032404",
+      "koordinaten": [
+        53.1389753,
+        8.2146017
+      ],
+      "farbe": "brown"
     }
   ]
 }
