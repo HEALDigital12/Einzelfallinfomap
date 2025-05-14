@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-13T06:34:07Z",
+  "last_updated": "2025-05-14T06:34:05Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -75,6 +75,17 @@
       "koordinaten": [
         53.1389753,
         8.2146017
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Venhauser Straße",
+      "datum": "2025-05-14",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6033318",
+      "koordinaten": [
+        52.3404124,
+        7.3921662
       ],
       "farbe": "brown"
     }
