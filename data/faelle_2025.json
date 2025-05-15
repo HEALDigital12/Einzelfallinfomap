@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-14T06:34:05Z",
+  "last_updated": "2025-05-15T06:34:26Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -88,6 +88,28 @@
         7.3921662
       ],
       "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Lüdenscheid",
+      "datum": "2025-05-15",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65850/6034255",
+      "koordinaten": [
+        51.218137,
+        7.6396975
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Knüwenstraße",
+      "datum": "2025-05-15",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/30835/6034252",
+      "koordinaten": [
+        51.4008935,
+        7.4750082
+      ],
+      "farbe": "orange"
     }
   ]
 }
