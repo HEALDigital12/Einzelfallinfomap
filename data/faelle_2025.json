@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-15T06:34:26Z",
+  "last_updated": "2025-05-16T06:34:23Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -110,6 +110,39 @@
         7.4750082
       ],
       "farbe": "orange"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Gebäude",
+      "datum": "2025-05-16",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117709/6035247",
+      "koordinaten": [
+        53.3649963,
+        7.2010776
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Schwäbisch Gmünd",
+      "datum": "2025-05-16",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/110969/6035244",
+      "koordinaten": [
+        48.7999036,
+        9.7977584
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Waldorfschule",
+      "datum": "2025-05-16",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65855/6035243",
+      "koordinaten": [
+        49.4384234,
+        8.6338501
+      ],
+      "farbe": "brown"
     }
   ]
 }
