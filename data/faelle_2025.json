@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-16T06:34:23Z",
+  "last_updated": "2025-05-17T06:31:10Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -143,6 +143,28 @@
         8.6338501
       ],
       "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Bremthal",
+      "datum": "2025-05-17",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/50154/6036131",
+      "koordinaten": [
+        50.1402161,
+        8.3587681
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Wörth am Rhein",
+      "datum": "2025-05-17",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117686/6036126",
+      "koordinaten": [
+        49.0543232,
+        8.2667399
+      ],
+      "farbe": "orange"
     }
   ]
 }
