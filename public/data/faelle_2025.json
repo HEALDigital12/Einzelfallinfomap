@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-17T06:31:10Z",
+  "last_updated": "2025-05-18T06:32:27Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -165,6 +165,28 @@
         8.2667399
       ],
       "farbe": "orange"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Saalfeld",
+      "datum": "2025-05-18",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/126724/6036369",
+      "koordinaten": [
+        50.6479143,
+        11.3610041
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Schlosserstraße",
+      "datum": "2025-05-18",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6036356",
+      "koordinaten": [
+        50.9767314,
+        11.0314208
+      ],
+      "farbe": "brown"
     }
   ]
 }
