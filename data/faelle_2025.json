@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-18T06:32:27Z",
+  "last_updated": "2025-05-19T06:35:24Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -185,6 +185,17 @@
       "koordinaten": [
         50.9767314,
         11.0314208
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Hamm",
+      "datum": "2025-05-19",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65844/6036714",
+      "koordinaten": [
+        51.681281,
+        7.8191185
       ],
       "farbe": "brown"
     }
