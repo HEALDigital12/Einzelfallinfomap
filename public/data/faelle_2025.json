@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-19T06:35:24Z",
+  "last_updated": "2025-05-20T06:34:43Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -198,6 +198,61 @@
         7.8191185
       ],
       "farbe": "brown"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Verensheim",
+      "datum": "2025-05-20",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65850/6037759",
+      "koordinaten": [
+        47.8693474,
+        12.6518429
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Iserlohn",
+      "datum": "2025-05-20",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65850/6037754",
+      "koordinaten": [
+        51.3746778,
+        7.6999713
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Lagerhalle",
+      "datum": "2025-05-20",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104236/6037750",
+      "koordinaten": [
+        49.7655333,
+        8.4873108
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Osnabrück",
+      "datum": "2025-05-20",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104236/6037745",
+      "koordinaten": [
+        52.2719595,
+        8.047635
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Raub",
+      "ort": "Stresemannstraße",
+      "datum": "2025-05-20",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/30835/6037739",
+      "koordinaten": [
+        52.5078248,
+        13.378177
+      ],
+      "farbe": "yellow"
     }
   ]
 }
