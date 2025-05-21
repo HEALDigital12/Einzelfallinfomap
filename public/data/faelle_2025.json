@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-20T06:34:43Z",
+  "last_updated": "2025-05-21T06:34:47Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -253,6 +253,39 @@
         13.378177
       ],
       "farbe": "yellow"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Hamm",
+      "datum": "2025-05-21",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/70116/6038735",
+      "koordinaten": [
+        51.681281,
+        7.8191185
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Lingen",
+      "datum": "2025-05-21",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6038725",
+      "koordinaten": [
+        52.5224659,
+        7.316584
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Plettenberg",
+      "datum": "2025-05-21",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65850/6038723",
+      "koordinaten": [
+        51.2136798,
+        7.8745627
+      ],
+      "farbe": "orange"
     }
   ]
 }
