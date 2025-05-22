@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-21T06:34:47Z",
+  "last_updated": "2025-05-22T06:34:21Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -286,6 +286,17 @@
         7.8745627
       ],
       "farbe": "orange"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Stettiner Straße",
+      "datum": "2025-05-22",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65849/6039677",
+      "koordinaten": [
+        53.6907925,
+        10.7970807
+      ],
+      "farbe": "brown"
     }
   ]
 }
