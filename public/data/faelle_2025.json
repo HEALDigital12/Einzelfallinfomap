@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-23T06:33:59Z",
+  "last_updated": "2025-05-24T06:30:51Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -317,6 +317,39 @@
       "koordinaten": [
         48.1335041,
         11.6991753
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Saarlandstraße",
+      "datum": "2025-05-24",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117696/6041404",
+      "koordinaten": [
+        53.5890858,
+        10.0318327
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Wohnhauses",
+      "datum": "2025-05-24",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6041394",
+      "koordinaten": [
+        50.1151672,
+        11.4738144
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Meppen",
+      "datum": "2025-05-24",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6041392",
+      "koordinaten": [
+        52.6947452,
+        7.2909824
       ],
       "farbe": "brown"
     }
