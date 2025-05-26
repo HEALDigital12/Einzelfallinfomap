@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-25T06:31:33Z",
+  "last_updated": "2025-05-26T06:35:44Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -350,6 +350,17 @@
       "koordinaten": [
         52.6947452,
         7.2909824
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Rems-Murr-Kreis",
+      "datum": "2025-05-26",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/110969/6041961",
+      "koordinaten": [
+        48.8966799,
+        9.5037124
       ],
       "farbe": "brown"
     }
