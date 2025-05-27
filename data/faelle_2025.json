@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-26T06:35:44Z",
+  "last_updated": "2025-05-27T06:34:28Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -361,6 +361,39 @@
       "koordinaten": [
         48.8966799,
         9.5037124
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Firmengebäude",
+      "datum": "2025-05-27",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/8/6042999",
+      "koordinaten": [
+        52.2351678,
+        9.4059539
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Abtei",
+      "datum": "2025-05-27",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/8/6042984",
+      "koordinaten": [
+        49.6839762,
+        6.9551004
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Stadtteil",
+      "datum": "2025-05-27",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/8/6042975",
+      "koordinaten": [
+        47.8839004,
+        8.3446627
       ],
       "farbe": "brown"
     }
