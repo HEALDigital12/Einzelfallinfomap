@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-27T06:34:28Z",
+  "last_updated": "2025-05-28T06:34:19Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -396,6 +396,28 @@
         8.3446627
       ],
       "farbe": "brown"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Bestwig",
+      "datum": "2025-05-28",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65847/6043911",
+      "koordinaten": [
+        51.3609508,
+        8.4005554
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Tötung",
+      "ort": "München",
+      "datum": "2025-05-28",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/64017/6043906",
+      "koordinaten": [
+        48.1371079,
+        11.5753822
+      ],
+      "farbe": "red"
     }
   ]
 }
