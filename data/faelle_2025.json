@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-28T06:34:19Z",
+  "last_updated": "2025-05-29T06:34:57Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -418,6 +418,28 @@
         11.5753822
       ],
       "farbe": "red"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Scheune",
+      "datum": "2025-05-29",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65847/6044794",
+      "koordinaten": [
+        51.0662863,
+        13.7516707
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Arnsberg",
+      "datum": "2025-05-29",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65847/6044789",
+      "koordinaten": [
+        51.4002384,
+        8.0605908
+      ],
+      "farbe": "brown"
     }
   ]
 }
