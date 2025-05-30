@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-29T06:34:57Z",
+  "last_updated": "2025-05-30T06:33:59Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -440,6 +440,28 @@
         8.0605908
       ],
       "farbe": "brown"
+    },
+    {
+      "delikt": "Raub",
+      "ort": "Hockenheim",
+      "datum": "2025-05-30",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/14915/6045026",
+      "koordinaten": [
+        49.3188892,
+        8.5475467
+      ],
+      "farbe": "yellow"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Dellfeld",
+      "datum": "2025-05-30",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/178881/6045009",
+      "koordinaten": [
+        49.2386825,
+        7.4786499
+      ],
+      "farbe": "orange"
     }
   ]
 }
