@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-30T06:33:59Z",
+  "last_updated": "2025-05-31T06:31:46Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -460,6 +460,72 @@
       "koordinaten": [
         49.2386825,
         7.4786499
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Einfamilienhaus",
+      "datum": "2025-05-31",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6045907",
+      "koordinaten": [
+        49.7985657,
+        9.9038228
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Einfamilienhaus",
+      "datum": "2025-05-31",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6045906",
+      "koordinaten": [
+        49.7985657,
+        9.9038228
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Werkstatt",
+      "datum": "2025-05-31",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6045903",
+      "koordinaten": [
+        49.2138647,
+        6.9496327
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Zeissstraße",
+      "datum": "2025-05-31",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6045902",
+      "koordinaten": [
+        52.3445495,
+        9.7768387
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Straße",
+      "datum": "2025-05-31",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65856/6045897",
+      "koordinaten": [
+        50.8705357,
+        7.4943548
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Raum",
+      "datum": "2025-05-31",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117686/6045895",
+      "koordinaten": [
+        50.6596841,
+        12.7025031
       ],
       "farbe": "orange"
     }
