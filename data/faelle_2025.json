@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-31T06:31:46Z",
+  "last_updated": "2025-06-01T06:33:12Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -528,6 +528,28 @@
         12.7025031
       ],
       "farbe": "orange"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Weimar",
+      "datum": "2025-06-01",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/126722/6046121",
+      "koordinaten": [
+        50.9793301,
+        11.3297921
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Kandel",
+      "datum": "2025-06-01",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117686/6046118",
+      "koordinaten": [
+        49.0809754,
+        8.1970699
+      ],
+      "farbe": "brown"
     }
   ]
 }
