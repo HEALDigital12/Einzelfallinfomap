@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-01T06:33:12Z",
+  "last_updated": "2025-06-02T06:36:22Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -548,6 +548,39 @@
       "koordinaten": [
         49.0809754,
         8.1970699
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Alexanderstraße",
+      "datum": "2025-06-02",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/30835/6046488",
+      "koordinaten": [
+        52.5185783,
+        13.417652
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Melstruper Straße",
+      "datum": "2025-06-02",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6046483",
+      "koordinaten": [
+        52.8653802,
+        7.3189314
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Hans-Hoppe-Straße",
+      "datum": "2025-06-02",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6046482",
+      "koordinaten": [
+        52.6079033,
+        10.0037346
       ],
       "farbe": "brown"
     }
