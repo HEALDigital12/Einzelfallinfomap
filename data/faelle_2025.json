@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-02T06:36:22Z",
+  "last_updated": "2025-06-03T06:36:22Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -581,6 +581,39 @@
       "koordinaten": [
         52.6079033,
         10.0037346
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Soest",
+      "datum": "2025-06-03",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65855/6047521",
+      "koordinaten": [
+        51.5725501,
+        8.1061259
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Räumlichkeiten",
+      "datum": "2025-06-03",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65855/6047518",
+      "koordinaten": [
+        49.0202374,
+        12.0943127
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Wohnung",
+      "datum": "2025-06-03",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/7304/6047502",
+      "koordinaten": [
+        51.6768846,
+        6.6114534
       ],
       "farbe": "brown"
     }
