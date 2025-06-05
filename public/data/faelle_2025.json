@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-04T06:34:57Z",
+  "last_updated": "2025-06-05T06:35:58Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -625,6 +625,17 @@
       "koordinaten": [
         52.5,
         6.96667
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Lotto-Annahmestelle",
+      "datum": "2025-06-05",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65855/6049406",
+      "koordinaten": [
+        48.1151398,
+        11.5934764
       ],
       "farbe": "brown"
     }
