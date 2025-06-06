@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-05T06:35:58Z",
+  "last_updated": "2025-06-06T06:35:52Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -636,6 +636,28 @@
       "koordinaten": [
         48.1151398,
         11.5934764
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Bad Bentheim",
+      "datum": "2025-06-06",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6050233",
+      "koordinaten": [
+        52.3025609,
+        7.16052
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Lagerhalle",
+      "datum": "2025-06-06",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6050231",
+      "koordinaten": [
+        49.7655333,
+        8.4873108
       ],
       "farbe": "brown"
     }
