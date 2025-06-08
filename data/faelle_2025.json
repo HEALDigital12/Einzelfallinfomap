@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-07T06:32:10Z",
+  "last_updated": "2025-06-08T06:33:38Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -658,6 +658,28 @@
       "koordinaten": [
         49.7655333,
         8.4873108
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Berliner Straße",
+      "datum": "2025-06-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/11815/6051172",
+      "koordinaten": [
+        52.4873298,
+        13.3310103
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Kirchenräumen",
+      "datum": "2025-06-08",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117686/6051169",
+      "koordinaten": [
+        49.0196679,
+        8.247413
       ],
       "farbe": "brown"
     }
