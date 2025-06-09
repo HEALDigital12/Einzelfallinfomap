@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-08T06:33:38Z",
+  "last_updated": "2025-06-09T06:36:55Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -682,6 +682,28 @@
         8.247413
       ],
       "farbe": "brown"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "UL",
+      "datum": "2025-06-09",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/110979/6051436",
+      "koordinaten": [
+        47.0225617,
+        28.8187692
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Bühnenbereiches",
+      "datum": "2025-06-09",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/178881/6051428",
+      "koordinaten": [
+        49.248655,
+        7.3641981
+      ],
+      "farbe": "orange"
     }
   ]
 }
