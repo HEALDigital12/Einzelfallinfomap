@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-09T06:36:55Z",
+  "last_updated": "2025-06-10T06:35:08Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -704,6 +704,39 @@
         7.3641981
       ],
       "farbe": "orange"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Mehrfamilienhauses",
+      "datum": "2025-06-10",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65855/6051726",
+      "koordinaten": [
+        50.6444484,
+        6.8091883
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Raub",
+      "ort": "Wümme",
+      "datum": "2025-06-10",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/59459/6051712",
+      "koordinaten": [
+        53.0841555,
+        9.2726174
+      ],
+      "farbe": "yellow"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Hauses",
+      "datum": "2025-06-10",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/43561/6051704",
+      "koordinaten": [
+        52.5177798,
+        13.2711943
+      ],
+      "farbe": "brown"
     }
   ]
 }
