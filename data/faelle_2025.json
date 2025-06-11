@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-10T06:35:08Z",
+  "last_updated": "2025-06-11T06:35:40Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -735,6 +735,39 @@
       "koordinaten": [
         52.5177798,
         13.2711943
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Herford",
+      "datum": "2025-06-11",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65846/6052698",
+      "koordinaten": [
+        52.1152245,
+        8.6711118
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Geseke",
+      "datum": "2025-06-11",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65855/6052696",
+      "koordinaten": [
+        51.6395322,
+        8.512578
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Mehrfamilienhaus",
+      "datum": "2025-06-11",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117709/6052694",
+      "koordinaten": [
+        54.3024348,
+        10.8553124
       ],
       "farbe": "brown"
     }
