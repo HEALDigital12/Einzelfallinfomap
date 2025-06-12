@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-11T06:35:40Z",
+  "last_updated": "2025-06-12T06:35:55Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -770,6 +770,61 @@
         10.8553124
       ],
       "farbe": "brown"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Minervastraße",
+      "datum": "2025-06-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/30835/6053548",
+      "koordinaten": [
+        49.4179028,
+        11.0757625
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Raub",
+      "ort": "Fesenfelder Straße",
+      "datum": "2025-06-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/68439/6053543",
+      "koordinaten": [
+        52.9071951,
+        8.7370689
+      ],
+      "farbe": "yellow"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Firmengebäudes",
+      "datum": "2025-06-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117709/6053542",
+      "koordinaten": [
+        50.7391746,
+        7.96766
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Grünstadt",
+      "datum": "2025-06-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117687/6053532",
+      "koordinaten": [
+        49.5653661,
+        8.1634571
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Bünder Straße",
+      "datum": "2025-06-12",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65846/6053523",
+      "koordinaten": [
+        52.2634335,
+        8.0615544
+      ],
+      "farbe": "orange"
     }
   ]
 }
