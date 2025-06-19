@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-18T06:35:32Z",
+  "last_updated": "2025-06-19T06:35:30Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -858,6 +858,39 @@
         9.2068313
       ],
       "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Wettbüro",
+      "datum": "2025-06-19",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/30835/6058600",
+      "koordinaten": [
+        52.4367555,
+        13.5452251
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Körperverletzung",
+      "ort": "Hagen",
+      "datum": "2025-06-19",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/30835/6058591",
+      "koordinaten": [
+        51.3582945,
+        7.473296
+      ],
+      "farbe": "orange"
+    },
+    {
+      "delikt": "Raub",
+      "ort": "Winterberg",
+      "datum": "2025-06-19",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65847/6058581",
+      "koordinaten": [
+        51.1930723,
+        8.5338466
+      ],
+      "farbe": "yellow"
     }
   ]
 }
