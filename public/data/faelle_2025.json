@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-19T06:35:30Z",
+  "last_updated": "2025-06-20T06:35:24Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -891,6 +891,39 @@
         8.5338466
       ],
       "farbe": "yellow"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Fußgängerzone",
+      "datum": "2025-06-20",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/117677/6059009",
+      "koordinaten": [
+        49.2482268,
+        7.3629631
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Paderborn",
+      "datum": "2025-06-20",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/55625/6059005",
+      "koordinaten": [
+        51.7177044,
+        8.752653
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Herzog-Adolf-Weg",
+      "datum": "2025-06-20",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65855/6059004",
+      "koordinaten": [
+        51.5545585,
+        8.1090176
+      ],
+      "farbe": "brown"
     }
   ]
 }
