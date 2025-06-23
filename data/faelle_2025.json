@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-22T06:33:12Z",
+  "last_updated": "2025-06-23T06:37:37Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -933,6 +933,17 @@
       "koordinaten": [
         49.0406235,
         11.3502346
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Römerstraße",
+      "datum": "2025-06-23",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/104234/6060415",
+      "koordinaten": [
+        49.7444194,
+        8.1176602
       ],
       "farbe": "brown"
     }
