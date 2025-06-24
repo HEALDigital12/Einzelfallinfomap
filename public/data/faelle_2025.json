@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-23T06:37:37Z",
+  "last_updated": "2025-06-24T06:36:36Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -944,6 +944,39 @@
       "koordinaten": [
         49.7444194,
         8.1176602
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Sexualdelikt",
+      "ort": "Schwäbisch Hall",
+      "datum": "2025-06-24",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/110969/6061498",
+      "koordinaten": [
+        49.1123963,
+        9.7369047
+      ],
+      "farbe": "violet"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Zavelstein",
+      "datum": "2025-06-24",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/137462/6061495",
+      "koordinaten": [
+        48.6942556,
+        8.6886664
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Balve",
+      "datum": "2025-06-24",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65850/6061483",
+      "koordinaten": [
+        51.3326498,
+        7.8670563
       ],
       "farbe": "brown"
     }
