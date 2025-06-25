@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-24T06:36:36Z",
+  "last_updated": "2025-06-25T06:36:34Z",
   "faelle": [
     {
       "delikt": "Sexualdelikt",
@@ -977,6 +977,17 @@
       "koordinaten": [
         51.3326498,
         7.8670563
+      ],
+      "farbe": "brown"
+    },
+    {
+      "delikt": "Einbruch",
+      "ort": "Werl",
+      "datum": "2025-06-25",
+      "quelle": "https://www.presseportal.de/blaulicht/pm/65855/6062421",
+      "koordinaten": [
+        51.5533457,
+        7.9155558
       ],
       "farbe": "brown"
     }
