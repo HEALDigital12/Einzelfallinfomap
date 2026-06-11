@@ -13,4 +13,4 @@ function App() {
     'Sexualdelikt',
     'Raub'
   ]);
-  const [selectedYear, setSelectedYear] =
+  const [selectedYear, setSelectedYear] = useState('2026');
