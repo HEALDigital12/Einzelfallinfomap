@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import CrimeMap from './CrimeMap';
 import Legend from './Legend';
 import Filter from './Filter';
@@ -9,26 +9,8 @@ function App() {
   const [selectedTypes, setSelectedTypes] = useState([
     'Tötung',
     'Messerstecherei',
-    'Raub',
-    'Sexualdelikt'
-    // Kein 'Verkehrsunfall'
+    'Körperverletzung',
+    'Sexualdelikt',
+    'Raub'
   ]);
-  const [selectedYear, setSelectedYear] = useState(2025);
-
-  // Optional: Initialisiere ausgewählte Typen nach dem Mounten
-  useEffect(() => {
-    setSelectedTypes(['Tötung', 'Messerstecherei', 'Raub', 'Sexualdelikt']);
-  }, []);
-
-  return (
-    <>
-      <CrimeMap selectedTypes={selectedTypes} selectedYear={selectedYear} />
-      <Legend />
-      <Filter selectedTypes={selectedTypes} onChange={setSelectedTypes} />
-      <YearFilter selectedYear={selectedYear} onChange={setSelectedYear} />
-      <LastUpdate />
-    </>
-  );
-}
-
-export default App;
+  const [selectedYear, setSelectedYear] =
