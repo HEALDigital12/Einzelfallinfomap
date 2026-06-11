@@ -1,16 +1,11 @@
-import React, { useState } from 'react';
-import CrimeMap from './CrimeMap';
-import Legend from './Legend';
-import Filter from './Filter';
-import YearFilter from './YearFilter';
-import LastUpdate from './LastUpdate';
+import React from 'react';
 
-function App() {
-  const [selectedTypes, setSelectedTypes] = useState([
-    'Tötung',
-    'Messerstecherei',
-    'Körperverletzung',
-    'Sexualdelikt',
-    'Raub'
-  ]);
-  const [selectedYear, setSelectedYear] = useState('2026');
+export default function App() {
+  return (
+    <main style={{ padding: '2rem', fontFamily: 'Arial, sans-serif' }}>
+      <h1>EinzelfallInfoMap</h1>
+      <p>Die Anwendung wird aktuell auf eine stabile Version mit automatischer Datenpipeline umgestellt.</p>
+      <p>Naechster Schritt: Karte, Filter und Scraper werden sauber verbunden.</p>
+    </main>
+  );
+}
